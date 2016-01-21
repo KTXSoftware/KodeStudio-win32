@@ -26,7 +26,7 @@ define(["require", "exports", 'vs/nls', 'vs/platform/configuration/common/config
             'telemetry.enableCrashReporter': {
                 'type': 'boolean',
                 'description': nls.localize('telemetry.enableCrashReporting', "Enable crash reports to be sent to Microsoft.\n\t// This option requires restart of VSCode to take effect."),
-                'default': true
+                'default': false
             }
         }
     });

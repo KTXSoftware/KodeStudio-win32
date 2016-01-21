@@ -133,26 +133,6 @@ define(["require", "exports", 'electron', 'fs', 'vs/nls', 'vs/base/common/object
             windows.manager.open({ cli: env.cliArgs }); // default: read paths from cli
         }
     }
-    function timebomb() {
-        if (!env.product.expiryDate || Date.now() <= env.product.expiryDate) {
-            return winjs_base_1.Promise.as(null);
-        }
-        return new winjs_base_1.Promise(function (c, e) {
-            electron_1.dialog.showMessageBox({
-                type: 'warning',
-                title: env.product.nameLong,
-                message: nls.localize('expired', "Expired"),
-                detail: nls.localize('expiredDetail', "This pre-release version of {0} has expired.\n\nPlease visit {1} to download the current release.", env.product.nameLong, env.product.expiryUrl),
-                buttons: [nls.localize('quit', "Quit"), nls.localize('openWebSite', "Open Web Site")],
-                noLink: true,
-            }, function (i) {
-                if (i === 1) {
-                    electron_1.shell.openExternal(env.product.expiryUrl);
-                }
-                e('Product expired');
-            });
-        });
-    }
     function setupIPC() {
         function setup(retry) {
             return service_net_1.serve(env.mainIPCHandle).then(null, function (err) {
@@ -197,8 +177,7 @@ define(["require", "exports", 'electron', 'fs', 'vs/nls', 'vs/base/common/object
     env_1.getUserEnvironment()
         .then(function (userEnv) {
         objects_1.assign(process.env, userEnv);
-        return timebomb()
-            .then(setupIPC)
+        return setupIPC()
             .then(function (ipcServer) { return main(ipcServer, userEnv); });
     })
         .done(null, quit);
