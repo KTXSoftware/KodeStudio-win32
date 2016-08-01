@@ -1,5 +1,8 @@
 {
 	"keys": {
+		"vs/workbench/parts/search/browser/openAnythingHandler": [
+			"fileAndTypeResults"
+		],
 		"vs/workbench/parts/search/browser/searchViewlet": [
 			"moreSearch",
 			"searchScope.includes",
@@ -27,25 +30,19 @@
 			"openSettings.message",
 			"ariaSearchResultsStatus"
 		],
-		"vs/workbench/parts/search/browser/openAnythingHandler": [
-			"fileAndTypeResults"
+		"vs/workbench/parts/output/browser/outputPanel": [
+			"outputPanelWithInputAriaLabel",
+			"outputPanelAriaLabel"
 		],
 		"vs/workbench/parts/debug/browser/debugViewlet": [
 			"noWorkspace",
 			"pleaseRestartToDebug"
-		],
-		"vs/workbench/parts/output/browser/outputPanel": [
-			"outputPanelWithInputAriaLabel",
-			"outputPanelAriaLabel"
 		],
 		"vs/workbench/parts/debug/browser/repl": [
 			"replAriaLabel"
 		],
 		"vs/workbench/parts/extensions/electron-browser/extensionsViewlet": [
 			"searchExtensions"
-		],
-		"vs/code/electron-main/main": [
-			"newWindow"
 		],
 		"vs/code/node/cliProcessMain": [
 			"notFound",
@@ -58,38 +55,13 @@
 			"uninstalling",
 			"successUninstall"
 		],
-		"vs/platform/actions/browser/menusExtensionPoint": [
-			"requirearry",
-			"requirestring",
-			"optstring",
-			"optstring",
-			"optstring",
-			"vscode.extension.contributes.menuItem.command",
-			"vscode.extension.contributes.menuItem.alt",
-			"vscode.extension.contributes.menuItem.when",
-			"vscode.extension.contributes.menuItem.group",
-			"vscode.extension.contributes.menus",
-			"menus.editorTitle",
-			"menus.editorContext",
-			"menus.explorerContext",
-			"nonempty",
-			"requirestring",
-			"requirestring",
-			"optstring",
-			"opticon",
-			"vscode.extension.contributes.commandType.command",
-			"vscode.extension.contributes.commandType.title",
-			"vscode.extension.contributes.commandType.category",
-			"vscode.extension.contributes.commandType.icon",
-			"vscode.extension.contributes.commandType.icon.light",
-			"vscode.extension.contributes.commandType.icon.dark",
-			"vscode.extension.contributes.commands",
-			"dup",
-			"menuId.invalid",
-			"missing.command",
-			"missing.altCommand",
-			"dupe.command",
-			"nosupport.altCommand"
+		"vs/code/electron-main/main": [
+			"newWindow"
+		],
+		"vs/base/common/severity": [
+			"sev.error",
+			"sev.warning",
+			"sev.info"
 		],
 		"vs/base/common/errors": [
 			{
@@ -124,9 +96,92 @@
 			"loaderError",
 			"loaderErrorNative"
 		],
+		"vs/platform/extensions/common/abstractExtensionService": [
+			"unknownDep",
+			"failedDep1",
+			"failedDep2",
+			"activationError"
+		],
+		"vs/editor/common/services/modeServiceImpl": [
+			"vscode.extension.contributes.languages",
+			"vscode.extension.contributes.languages.id",
+			"vscode.extension.contributes.languages.aliases",
+			"vscode.extension.contributes.languages.extensions",
+			"vscode.extension.contributes.languages.filenames",
+			"vscode.extension.contributes.languages.filenamePatterns",
+			"vscode.extension.contributes.languages.mimetypes",
+			"vscode.extension.contributes.languages.firstLine",
+			"vscode.extension.contributes.languages.configuration",
+			"invalid.empty",
+			"require.id",
+			"opt.extensions",
+			"opt.filenames",
+			"opt.firstLine",
+			"opt.configuration",
+			"opt.aliases",
+			"opt.mimetypes",
+			"invalid"
+		],
+		"vs/workbench/browser/actions/toggleStatusbarVisibility": [
+			"toggleStatusbar",
+			"view"
+		],
+		"vs/platform/actions/browser/menusExtensionPoint": [
+			"requirearry",
+			"requirestring",
+			"optstring",
+			"optstring",
+			"optstring",
+			"vscode.extension.contributes.menuItem.command",
+			"vscode.extension.contributes.menuItem.alt",
+			"vscode.extension.contributes.menuItem.when",
+			"vscode.extension.contributes.menuItem.group",
+			"vscode.extension.contributes.menus",
+			"menus.editorTitle",
+			"menus.editorContext",
+			"menus.explorerContext",
+			"nonempty",
+			"requirestring",
+			"requirestring",
+			"optstring",
+			"opticon",
+			"vscode.extension.contributes.commandType.command",
+			"vscode.extension.contributes.commandType.title",
+			"vscode.extension.contributes.commandType.category",
+			"vscode.extension.contributes.commandType.icon",
+			"vscode.extension.contributes.commandType.icon.light",
+			"vscode.extension.contributes.commandType.icon.dark",
+			"vscode.extension.contributes.commands",
+			"dup",
+			"menuId.invalid",
+			"missing.command",
+			"missing.altCommand",
+			"dupe.command",
+			"nosupport.altCommand"
+		],
+		"vs/workbench/browser/actions/toggleSidebarPosition": [
+			"togglePosition",
+			"view"
+		],
+		"vs/workbench/parts/quickopen/browser/quickopen.contribution": [
+			"commandsHandlerDescriptionDefault",
+			"gotoLineDescriptionMac",
+			"gotoLineDescriptionWin",
+			"gotoSymbolDescription",
+			"gotoSymbolDescriptionScoped",
+			"helpDescription"
+		],
 		"vs/workbench/browser/actions/toggleSidebarVisibility": [
 			"toggleSidebar",
 			"view"
+		],
+		"vs/workbench/browser/parts/editor/editorPicker": [
+			"entryAriaLabel",
+			"groupLabel",
+			"noResultsFoundInGroup",
+			"noOpenedEditors",
+			"noResultsFound",
+			"noOpenedEditors"
 		],
 		"vs/workbench/browser/actions/openSettings": [
 			"fail.createSettings",
@@ -147,10 +202,6 @@
 			"defaultKeybindings",
 			"preferences"
 		],
-		"vs/workbench/browser/actions/toggleSidebarPosition": [
-			"togglePosition",
-			"view"
-		],
 		"vs/workbench/browser/actions/configureLocale": [
 			"configureLocale",
 			"displayLanguage",
@@ -159,30 +210,7 @@
 			"fail.createSettings",
 			"JsonSchema.locale"
 		],
-		"vs/workbench/browser/actions/toggleStatusbarVisibility": [
-			"toggleStatusbar",
-			"view"
-		],
-		"vs/workbench/parts/quickopen/browser/quickopen.contribution": [
-			"commandsHandlerDescriptionDefault",
-			"gotoLineDescriptionMac",
-			"gotoLineDescriptionWin",
-			"gotoSymbolDescription",
-			"gotoSymbolDescriptionScoped",
-			"helpDescription"
-		],
-		"vs/workbench/browser/parts/editor/editorPicker": [
-			"entryAriaLabel",
-			"groupLabel",
-			"noResultsFoundInGroup",
-			"noOpenedEditors",
-			"noResultsFound",
-			"noOpenedEditors"
-		],
 		"vs/workbench/parts/files/browser/fileActions.contribution": [
-			"filesCategory"
-		],
-		"vs/workbench/parts/files/electron-browser/files.electron.contribution": [
 			"filesCategory"
 		],
 		"vs/workbench/parts/files/browser/files.contribution": [
@@ -218,6 +246,9 @@
 			"exclude",
 			"exclude.boolean",
 			"exclude.when"
+		],
+		"vs/workbench/parts/files/electron-browser/files.electron.contribution": [
+			"filesCategory"
 		],
 		"vs/workbench/parts/git/browser/gitQuickOpen": [
 			"refAriaLabel",
@@ -265,15 +296,15 @@
 			"debugCategory",
 			"launchConfigDoesNotExist"
 		],
+		"vs/workbench/parts/html/browser/html.contribution": [
+			"html.editor.label"
+		],
 		"vs/workbench/parts/extensions/electron-browser/extensions.contribution": [
 			"extensionsCommands",
 			"galleryExtensionsCommands",
 			"extension",
 			"extensions",
 			"view"
-		],
-		"vs/workbench/parts/html/browser/html.contribution": [
-			"html.editor.label"
 		],
 		"vs/workbench/parts/extensions/electron-browser/extensionsQuickOpen": [
 			"manage",
@@ -303,6 +334,16 @@
 			"triggerExpansionOnTab",
 			"emmetPreferences",
 			"emmetSyntaxProfiles"
+		],
+		"vs/workbench/parts/execution/electron-browser/terminal.contribution": [
+			"terminalConfigurationTitle",
+			"terminal.external.windowsExec",
+			"terminal.external.osxExec",
+			"terminal.external.linuxExec",
+			"globalConsoleActionWin",
+			"globalConsoleActionMacLinux",
+			"scopedConsoleActionWin",
+			"scopedConsoleActionMacLinux"
 		],
 		"vs/workbench/parts/tasks/electron-browser/task.contribution": [
 			"AbstractTaskAction.noWorkspace",
@@ -389,16 +430,6 @@
 			"JsonSchema.mac",
 			"JsonSchema.linux"
 		],
-		"vs/workbench/parts/execution/electron-browser/terminal.contribution": [
-			"terminalConfigurationTitle",
-			"terminal.external.windowsExec",
-			"terminal.external.osxExec",
-			"terminal.external.linuxExec",
-			"globalConsoleActionWin",
-			"globalConsoleActionMacLinux",
-			"scopedConsoleActionWin",
-			"scopedConsoleActionMacLinux"
-		],
 		"vs/workbench/parts/snippets/electron-browser/snippets.contribution": [
 			"openSnippet.label",
 			"openSnippet.pickLanguage",
@@ -425,6 +456,18 @@
 			"neverShowAgain",
 			"readmore"
 		],
+		"vs/workbench/electron-browser/main.contribution": [
+			"view",
+			"developer",
+			"file",
+			"windowConfigurationTitle",
+			"openFilesInNewWindow",
+			"reopenFolders",
+			"restoreFullscreen",
+			"zoomLevel",
+			"updateConfigurationTitle",
+			"updateChannel"
+		],
 		"vs/workbench/electron-browser/darwin/cli.contribution": [
 			"install",
 			"exists",
@@ -446,87 +489,29 @@
 			"laterInfo",
 			"shellCommand"
 		],
-		"vs/workbench/electron-browser/main.contribution": [
-			"view",
-			"developer",
-			"file",
-			"windowConfigurationTitle",
-			"openFilesInNewWindow",
-			"reopenFolders",
-			"restoreFullscreen",
-			"zoomLevel",
-			"updateConfigurationTitle",
-			"updateChannel"
+		"vs/workbench/parts/search/browser/openFileHandler": [
+			"entryAriaLabel",
+			"searchResults"
 		],
-		"vs/platform/jsonschemas/common/jsonContributionRegistry": [
-			"schema.json",
-			"schema.json.id",
-			"schema.json.$schema",
-			"schema.json.title",
-			"schema.json.description",
-			"schema.json.default",
-			"schema.json.multipleOf",
-			"schema.json.maximum",
-			"schema.json.exclusiveMaximum",
-			"schema.json.minimum",
-			"schema.json.exclusiveMininum",
-			"schema.json.maxLength",
-			"schema.json.minLength",
-			"schema.json.pattern",
-			"schema.json.additionalItems",
-			"schema.json.items",
-			"schema.json.maxItems",
-			"schema.json.minItems",
-			"schema.json.uniqueItems",
-			"schema.json.maxProperties",
-			"schema.json.minProperties",
-			"schema.json.required",
-			"schema.json.additionalProperties",
-			"schema.json.definitions",
-			"schema.json.properties",
-			"schema.json.patternProperties",
-			"schema.json.dependencies",
-			"schema.json.enum",
-			"schema.json.type",
-			"schema.json.format",
-			"schema.json.allOf",
-			"schema.json.anyOf",
-			"schema.json.oneOf",
-			"schema.json.not"
+		"vs/base/parts/quickopen/browser/quickOpenModel": [
+			"quickOpenAriaLabelEntry",
+			"quickOpenAriaLabel"
 		],
-		"vs/editor/common/modes/supports/suggestSupport": [
-			"editor.wordBasedSuggestions"
+		"vs/workbench/parts/search/browser/openSymbolHandler": [
+			"entryAriaLabel",
+			"symbols",
+			"noSymbolsMatching",
+			"noSymbolsWithoutInput"
 		],
-		"vs/platform/extensions/common/abstractExtensionService": [
-			"unknownDep",
-			"failedDep1",
-			"failedDep2",
-			"activationError"
+		"vs/workbench/browser/quickopen": [
+			"noResultsMatching",
+			"noResultsFound2",
+			"entryAriaLabel",
+			"noCommands"
 		],
-		"vs/base/common/severity": [
-			"sev.error",
-			"sev.warning",
-			"sev.info"
-		],
-		"vs/editor/common/services/modeServiceImpl": [
-			"vscode.extension.contributes.languages",
-			"vscode.extension.contributes.languages.id",
-			"vscode.extension.contributes.languages.aliases",
-			"vscode.extension.contributes.languages.extensions",
-			"vscode.extension.contributes.languages.filenames",
-			"vscode.extension.contributes.languages.filenamePatterns",
-			"vscode.extension.contributes.languages.mimetypes",
-			"vscode.extension.contributes.languages.firstLine",
-			"vscode.extension.contributes.languages.configuration",
-			"invalid.empty",
-			"require.id",
-			"opt.extensions",
-			"opt.filenames",
-			"opt.firstLine",
-			"opt.configuration",
-			"opt.aliases",
-			"opt.mimetypes",
-			"invalid"
+		"vs/platform/message/common/message": [
+			"close",
+			"cancel"
 		],
 		"vs/languages/html/common/htmlTags": [
 			"tags.html",
@@ -672,99 +657,64 @@
 			"tags.ion.toggle",
 			"tags.ion.view"
 		],
-		"vs/base/browser/ui/aria/aria": [
-			"repeated"
+		"vs/editor/common/modes/supports/suggestSupport": [
+			"editor.wordBasedSuggestions"
 		],
-		"vs/base/browser/ui/findinput/findInput": [
-			"regexDescription",
-			"wordsDescription",
-			"caseDescription",
-			"defaultLabel"
+		"vs/platform/jsonschemas/common/jsonContributionRegistry": [
+			"schema.json",
+			"schema.json.id",
+			"schema.json.$schema",
+			"schema.json.title",
+			"schema.json.description",
+			"schema.json.default",
+			"schema.json.multipleOf",
+			"schema.json.maximum",
+			"schema.json.exclusiveMaximum",
+			"schema.json.minimum",
+			"schema.json.exclusiveMininum",
+			"schema.json.maxLength",
+			"schema.json.minLength",
+			"schema.json.pattern",
+			"schema.json.additionalItems",
+			"schema.json.items",
+			"schema.json.maxItems",
+			"schema.json.minItems",
+			"schema.json.uniqueItems",
+			"schema.json.maxProperties",
+			"schema.json.minProperties",
+			"schema.json.required",
+			"schema.json.additionalProperties",
+			"schema.json.definitions",
+			"schema.json.properties",
+			"schema.json.patternProperties",
+			"schema.json.dependencies",
+			"schema.json.enum",
+			"schema.json.type",
+			"schema.json.format",
+			"schema.json.allOf",
+			"schema.json.anyOf",
+			"schema.json.oneOf",
+			"schema.json.not"
 		],
-		"vs/base/browser/ui/inputbox/inputBox": [
-			"alertErrorMessage",
-			"alertWarningMessage",
-			"alertInfoMessage"
+		"vs/workbench/parts/git/node/git.lib": [
+			"fileBinaryError"
+		],
+		"vs/workbench/parts/git/browser/views/gitless/gitlessView": [
+			"macInstallWith",
+			"winInstallWith",
+			"linuxDownloadFrom",
+			"downloadFrom",
+			"looksLike",
+			"pleaseRestart"
 		],
 		"vs/workbench/browser/viewlet": [
 			"collapse",
 			"viewToolbarAriaLabel",
 			"viewToolbarAriaLabel"
 		],
-		"vs/platform/message/common/message": [
-			"close",
-			"cancel"
-		],
-		"vs/workbench/parts/search/browser/searchResultsView": [
-			"searchMatches",
-			"searchMatch",
-			"noMatches",
-			"fileMatchAriaLabel",
-			"emptyMatchAriaLabel",
-			"replacePreviewResultAria",
-			"searchResultAria"
-		],
-		"vs/workbench/parts/search/browser/searchActions": [
-			"showSearchViewlet",
-			"replaceInFiles",
-			"findInFolder",
-			"RefreshAction.label",
-			"ClearSearchResultsAction.label",
-			"RemoveAction.label",
-			"file.replaceAll.label",
-			"match.replace.label",
-			"ConfigureGlobalExclusionsAction.label"
-		],
-		"vs/workbench/parts/search/browser/patternInputWidget": [
-			"defaultLabel",
-			"patternDescription",
-			"patternHelpInclude"
-		],
-		"vs/base/common/keyCodes": [
-			"windowsKey",
-			"ctrlKey.long",
-			"shiftKey.long",
-			"altKey.long",
-			"cmdKey.long",
-			"windowsKey.long",
-			"ctrlKey",
-			"shiftKey",
-			"altKey",
-			"cmdKey",
-			"windowsKey"
-		],
-		"vs/workbench/parts/search/browser/searchWidget": [
-			"search.action.replaceAll.disabled.label",
-			"search.action.replaceAll.enabled.label",
-			"search.replace.toggle.button.title",
-			"label.Search",
-			"search.placeHolder",
-			"label.Replace",
-			"search.replace.placeHolder",
-			"regexp.validationFailure"
-		],
-		"vs/base/parts/quickopen/browser/quickOpenModel": [
-			"quickOpenAriaLabelEntry",
-			"quickOpenAriaLabel"
-		],
-		"vs/workbench/parts/search/browser/openFileHandler": [
-			"entryAriaLabel",
-			"searchResults"
-		],
-		"vs/workbench/parts/search/browser/openSymbolHandler": [
-			"entryAriaLabel",
-			"symbols",
-			"noSymbolsMatching",
-			"noSymbolsWithoutInput"
-		],
-		"vs/workbench/browser/quickopen": [
-			"noResultsMatching",
-			"noResultsFound2",
-			"entryAriaLabel",
-			"noCommands"
-		],
-		"vs/workbench/parts/git/node/git.lib": [
-			"fileBinaryError"
+		"vs/workbench/parts/git/browser/views/notroot/notrootView": [
+			"wrongRoot",
+			"pleaseRestart"
 		],
 		"vs/workbench/parts/git/browser/gitWorkbenchContributions": [
 			"gitProgressBadge",
@@ -781,10 +731,6 @@
 			"gitLongCommit",
 			"gitLargeRepos"
 		],
-		"vs/workbench/parts/git/browser/views/empty/emptyView": [
-			"noGit",
-			"gitinit"
-		],
 		"vs/workbench/parts/git/browser/views/changes/changesView": [
 			"needMessage",
 			"nothingToCommit",
@@ -794,20 +740,12 @@
 			"treeAriaLabel",
 			"showOutput"
 		],
+		"vs/workbench/parts/git/browser/views/empty/emptyView": [
+			"noGit",
+			"gitinit"
+		],
 		"vs/workbench/parts/git/browser/views/noworkspace/noworkspaceView": [
 			"noWorkspace",
-			"pleaseRestart"
-		],
-		"vs/workbench/parts/git/browser/views/gitless/gitlessView": [
-			"macInstallWith",
-			"winInstallWith",
-			"linuxDownloadFrom",
-			"downloadFrom",
-			"looksLike",
-			"pleaseRestart"
-		],
-		"vs/workbench/parts/git/browser/views/notroot/notrootView": [
-			"wrongRoot",
 			"pleaseRestart"
 		],
 		"vs/workbench/parts/git/browser/views/disabled/disabledView": [
@@ -817,6 +755,84 @@
 			"huge",
 			"setting",
 			"allo"
+		],
+		"vs/base/browser/ui/aria/aria": [
+			"repeated"
+		],
+		"vs/base/browser/ui/findinput/findInput": [
+			"regexDescription",
+			"wordsDescription",
+			"caseDescription",
+			"defaultLabel"
+		],
+		"vs/base/browser/ui/inputbox/inputBox": [
+			"alertErrorMessage",
+			"alertWarningMessage",
+			"alertInfoMessage"
+		],
+		"vs/workbench/parts/search/browser/patternInputWidget": [
+			"defaultLabel",
+			"patternDescription",
+			"patternHelpInclude"
+		],
+		"vs/workbench/parts/search/browser/searchResultsView": [
+			"searchMatches",
+			"searchMatch",
+			"noMatches",
+			"fileMatchAriaLabel",
+			"emptyMatchAriaLabel",
+			"replacePreviewResultAria",
+			"searchResultAria"
+		],
+		"vs/workbench/parts/search/browser/searchWidget": [
+			"search.action.replaceAll.disabled.label",
+			"search.action.replaceAll.enabled.label",
+			"search.replace.toggle.button.title",
+			"label.Search",
+			"search.placeHolder",
+			"label.Replace",
+			"search.replace.placeHolder",
+			"regexp.validationFailure"
+		],
+		"vs/workbench/parts/search/browser/searchActions": [
+			"showSearchViewlet",
+			"replaceInFiles",
+			"findInFolder",
+			"RefreshAction.label",
+			"ClearSearchResultsAction.label",
+			"RemoveAction.label",
+			"file.replaceAll.label",
+			"match.replace.label",
+			"ConfigureGlobalExclusionsAction.label"
+		],
+		"vs/workbench/parts/output/common/outputEditorInput": [
+			"output",
+			"outputChannel"
+		],
+		"vs/base/common/keyCodes": [
+			"windowsKey",
+			"ctrlKey.long",
+			"shiftKey.long",
+			"altKey.long",
+			"cmdKey.long",
+			"windowsKey.long",
+			"ctrlKey",
+			"shiftKey",
+			"altKey",
+			"cmdKey",
+			"windowsKey"
+		],
+		"vs/workbench/browser/parts/editor/stringEditor": [
+			"textEditor",
+			"readonlyEditorWithInputAriaLabel",
+			"readonlyEditorAriaLabel",
+			"untitledFileEditorWithInputAriaLabel",
+			"untitledFileEditorAriaLabel"
+		],
+		"vs/workbench/parts/output/browser/outputActions": [
+			"toggleOutput",
+			"clearOutput",
+			"switchToOutput.label"
 		],
 		"vs/workbench/parts/debug/browser/debugActionItems": [
 			"noConfigurations"
@@ -867,22 +883,6 @@
 			"unreadOutput",
 			"startWithoutDebugging"
 		],
-		"vs/workbench/browser/parts/editor/stringEditor": [
-			"textEditor",
-			"readonlyEditorWithInputAriaLabel",
-			"readonlyEditorAriaLabel",
-			"untitledFileEditorWithInputAriaLabel",
-			"untitledFileEditorAriaLabel"
-		],
-		"vs/workbench/parts/output/common/outputEditorInput": [
-			"output",
-			"outputChannel"
-		],
-		"vs/workbench/parts/output/browser/outputActions": [
-			"toggleOutput",
-			"clearOutput",
-			"switchToOutput.label"
-		],
 		"vs/workbench/parts/debug/browser/replViewer": [
 			"stateCapture",
 			"fileLinkMac",
@@ -897,6 +897,12 @@
 			"startDebugFirst",
 			"unknownStack",
 			"snapshotObj"
+		],
+		"vs/platform/extensionManagement/common/extensionManagement": [
+			"extensions"
+		],
+		"vs/workbench/parts/extensions/electron-browser/extensionsInput": [
+			"extensionsInputName"
 		],
 		"vs/workbench/parts/extensions/electron-browser/extensionsActions": [
 			"installAction",
@@ -916,24 +922,6 @@
 			"showPopularExtensions",
 			"showExtensionRecommendations",
 			"showInstalledExtensions"
-		],
-		"vs/workbench/parts/extensions/electron-browser/extensionsInput": [
-			"extensionsInputName"
-		],
-		"vs/platform/extensionManagement/common/extensionManagement": [
-			"extensions"
-		],
-		"vs/workbench/parts/terminal/electron-browser/terminalActions": [
-			"workbench.action.terminal.toggleTerminal",
-			"workbench.action.terminal.kill",
-			"workbench.action.terminal.kill.short",
-			"workbench.action.terminal.new",
-			"workbench.action.terminal.new.short",
-			"workbench.action.terminal.focus",
-			"workbench.action.terminal.focusNext",
-			"workbench.action.terminal.focusPrevious",
-			"workbench.action.terminal.runSelectedText",
-			"workbench.action.terminal.switchTerminalInstance"
 		],
 		"vs/workbench/parts/markers/browser/markersActionProvider": [
 			"RemoveAction.label"
@@ -972,11 +960,36 @@
 			"problems.tree.aria.label.marker.nosource",
 			"errors.warnings.show.label"
 		],
+		"vs/workbench/parts/terminal/electron-browser/terminalActions": [
+			"workbench.action.terminal.toggleTerminal",
+			"workbench.action.terminal.kill",
+			"workbench.action.terminal.kill.short",
+			"workbench.action.terminal.new",
+			"workbench.action.terminal.new.short",
+			"workbench.action.terminal.focus",
+			"workbench.action.terminal.focusNext",
+			"workbench.action.terminal.focusPrevious",
+			"workbench.action.terminal.runSelectedText",
+			"workbench.action.terminal.switchTerminalInstance"
+		],
 		"vs/workbench/node/extensionHostMain": [
 			"overwritingExtension",
 			"extensionUnderDevelopment",
 			"overwritingExtension",
 			"extensionTestError"
+		],
+		"vs/platform/extensionManagement/node/extensionManagementService": [
+			"invalidManifest",
+			"invalidName",
+			"invalidPublisher",
+			"invalidVersion",
+			"restartCode",
+			"noCompatible",
+			"notExists"
+		],
+		"vs/platform/telemetry/common/telemetryService": [
+			"telemetryConfigurationTitle",
+			"telemetry.enableTelemetry"
 		],
 		"vs/code/node/argv": [
 			"diff",
@@ -1584,6 +1597,9 @@
 			"aboutDetail",
 			"okButton"
 		],
+		"vs/workbench/parts/git/electron-main/askpassService": [
+			"git"
+		],
 		"vs/code/electron-main/windows": [
 			"hiddenMenuBar",
 			"ok",
@@ -1599,21 +1615,32 @@
 			"appCrashed",
 			"appCrashedDetail"
 		],
-		"vs/workbench/parts/git/electron-main/askpassService": [
-			"git"
+		"vs/editor/common/modes/modesRegistry": [
+			"plainText.alias"
 		],
-		"vs/platform/extensionManagement/node/extensionManagementService": [
-			"invalidManifest",
-			"invalidName",
-			"invalidPublisher",
-			"invalidVersion",
-			"restartCode",
-			"noCompatible",
-			"notExists"
-		],
-		"vs/platform/telemetry/common/telemetryService": [
-			"telemetryConfigurationTitle",
-			"telemetry.enableTelemetry"
+		"vs/platform/extensions/common/extensionsRegistry": [
+			"extensionDescription.empty",
+			"extensionDescription.publisher",
+			"extensionDescription.name",
+			"extensionDescription.version",
+			"extensionDescription.engines",
+			"extensionDescription.engines.vscode",
+			"extensionDescription.extensionDependencies",
+			"extensionDescription.activationEvents1",
+			"extensionDescription.activationEvents2",
+			"extensionDescription.main1",
+			"extensionDescription.main2",
+			"extensionDescription.main3",
+			"vscode.extension.displayName",
+			"vscode.extension.categories",
+			"vscode.extension.galleryBanner",
+			"vscode.extension.galleryBanner.color",
+			"vscode.extension.galleryBanner.theme",
+			"vscode.extension.publisher",
+			"vscode.extension.activationEvents",
+			"vscode.extension.extensionDependencies",
+			"vscode.extension.scripts.prepublish",
+			"vscode.extension.contributes"
 		],
 		"vs/editor/contrib/accessibility/browser/accessibility": [
 			"ShowAccessibilityHelpAction",
@@ -1625,19 +1652,19 @@
 			"tabFocusModeOffMsgNoKb",
 			"outroMsg"
 		],
-		"vs/editor/contrib/clipboard/browser/clipboard": [
-			"actions.clipboard.cutLabel",
-			"actions.clipboard.copyLabel",
-			"actions.clipboard.pasteLabel"
-		],
-		"vs/editor/contrib/contextmenu/browser/contextmenu": [
-			"action.showContextMenu.label"
-		],
 		"vs/editor/contrib/comment/common/comment": [
 			"comment.line",
 			"comment.line.add",
 			"comment.line.remove",
 			"comment.block"
+		],
+		"vs/editor/contrib/contextmenu/browser/contextmenu": [
+			"action.showContextMenu.label"
+		],
+		"vs/editor/contrib/clipboard/browser/clipboard": [
+			"actions.clipboard.cutLabel",
+			"actions.clipboard.copyLabel",
+			"actions.clipboard.pasteLabel"
 		],
 		"vs/editor/contrib/format/common/formatActions": [
 			"formatAction.label"
@@ -1664,6 +1691,10 @@
 			"InPlaceReplaceAction.previous.label",
 			"InPlaceReplaceAction.next.label"
 		],
+		"vs/editor/contrib/carretOperations/common/carretOperations": [
+			"carret.moveLeft",
+			"carret.moveRight"
+		],
 		"vs/editor/contrib/linesOperations/common/linesOperations": [
 			"lines.delete",
 			"lines.sortAscending",
@@ -1678,23 +1709,19 @@
 			"lines.insertBefore",
 			"lines.insertAfter"
 		],
-		"vs/editor/contrib/carretOperations/common/carretOperations": [
-			"carret.moveLeft",
-			"carret.moveRight"
-		],
 		"vs/editor/contrib/links/browser/links": [
 			"links.navigate.mac",
 			"links.navigate",
 			"invalid.url",
 			"label"
 		],
+		"vs/editor/contrib/parameterHints/browser/parameterHints": [
+			"parameterHints.trigger.label"
+		],
 		"vs/editor/contrib/multicursor/common/multicursor": [
 			"mutlicursor.insertAbove",
 			"mutlicursor.insertBelow",
 			"mutlicursor.insertAtEndOfEachLineSelected"
-		],
-		"vs/editor/contrib/parameterHints/browser/parameterHints": [
-			"parameterHints.trigger.label"
 		],
 		"vs/editor/contrib/quickFix/browser/quickFix": [
 			"quickfix.trigger.label"
@@ -1707,12 +1734,15 @@
 		"vs/editor/contrib/rename/browser/rename": [
 			"rename.label"
 		],
+		"vs/editor/contrib/smartSelect/common/jumpToBracket": [
+			"smartSelect.jumpBracket"
+		],
 		"vs/editor/contrib/smartSelect/common/smartSelect": [
 			"smartSelect.grow",
 			"smartSelect.shrink"
 		],
-		"vs/editor/contrib/smartSelect/common/jumpToBracket": [
-			"smartSelect.jumpBracket"
+		"vs/editor/contrib/toggleWordWrap/common/toggleWordWrap": [
+			"toggle.wordwrap"
 		],
 		"vs/editor/contrib/suggest/browser/suggest": [
 			"suggest.trigger.label"
@@ -1726,22 +1756,6 @@
 			"DefineKeybindingAction",
 			"defineKeybinding.kbLayoutInfoMessage",
 			"defineKeybinding.kbLayoutErrorMessage"
-		],
-		"vs/editor/contrib/toggleWordWrap/common/toggleWordWrap": [
-			"toggle.wordwrap"
-		],
-		"vs/editor/contrib/folding/browser/folding": [
-			"unfoldAction.label",
-			"unFoldRecursivelyAction.label",
-			"foldAction.label",
-			"foldRecursivelyAction.label",
-			"foldAllAction.label",
-			"unfoldAllAction.label",
-			"foldLevel1Action.label",
-			"foldLevel2Action.label",
-			"foldLevel3Action.label",
-			"foldLevel4Action.label",
-			"foldLevel5Action.label"
 		],
 		"vs/editor/contrib/indentation/common/indentation": [
 			"configuredTabSize",
@@ -1759,29 +1773,18 @@
 			"toggleRenderWhitespace",
 			"toggleRenderControlCharacters"
 		],
-		"vs/platform/extensions/common/extensionsRegistry": [
-			"extensionDescription.empty",
-			"extensionDescription.publisher",
-			"extensionDescription.name",
-			"extensionDescription.version",
-			"extensionDescription.engines",
-			"extensionDescription.engines.vscode",
-			"extensionDescription.extensionDependencies",
-			"extensionDescription.activationEvents1",
-			"extensionDescription.activationEvents2",
-			"extensionDescription.main1",
-			"extensionDescription.main2",
-			"extensionDescription.main3",
-			"vscode.extension.displayName",
-			"vscode.extension.categories",
-			"vscode.extension.galleryBanner",
-			"vscode.extension.galleryBanner.color",
-			"vscode.extension.galleryBanner.theme",
-			"vscode.extension.publisher",
-			"vscode.extension.activationEvents",
-			"vscode.extension.extensionDependencies",
-			"vscode.extension.scripts.prepublish",
-			"vscode.extension.contributes"
+		"vs/editor/contrib/folding/browser/folding": [
+			"unfoldAction.label",
+			"unFoldRecursivelyAction.label",
+			"foldAction.label",
+			"foldRecursivelyAction.label",
+			"foldAllAction.label",
+			"unfoldAllAction.label",
+			"foldLevel1Action.label",
+			"foldLevel2Action.label",
+			"foldLevel3Action.label",
+			"foldLevel4Action.label",
+			"foldLevel5Action.label"
 		],
 		"vs/languages/html/common/html.contribution": [
 			"htmlConfigurationTitle",
@@ -1832,11 +1835,6 @@
 			"cannotRunGotoSymbolInFile",
 			"cannotRunGotoSymbol"
 		],
-		"vs/workbench/parts/quickopen/browser/helpHandler": [
-			"entryAriaLabel",
-			"globalCommands",
-			"editorCommands"
-		],
 		"vs/workbench/parts/quickopen/browser/commandsHandler": [
 			"showTriggerActions",
 			"entryAriaLabelWithKey",
@@ -1848,11 +1846,16 @@
 			"noCommandsMatching",
 			"QuickCommandsAction.label"
 		],
-		"vs/workbench/parts/files/browser/views/emptyView": [
-			"explorerSection",
-			"noWorkspace",
-			"noWorkspaceHelp",
-			"openFolder"
+		"vs/workbench/parts/quickopen/browser/helpHandler": [
+			"entryAriaLabel",
+			"globalCommands",
+			"editorCommands"
+		],
+		"vs/workbench/parts/files/browser/views/openEditorsView": [
+			"openEditosrSection",
+			"openEditors",
+			"treeAriaLabel",
+			"dirtyCounter"
 		],
 		"vs/workbench/parts/files/browser/views/explorerViewer": [
 			"fileInputAriaLabel",
@@ -1867,15 +1870,15 @@
 				]
 			}
 		],
-		"vs/workbench/parts/files/browser/views/openEditorsView": [
-			"openEditosrSection",
-			"openEditors",
-			"treeAriaLabel",
-			"dirtyCounter"
-		],
 		"vs/workbench/parts/files/browser/views/explorerView": [
 			"explorerSection",
 			"treeAriaLabel"
+		],
+		"vs/workbench/parts/files/browser/views/emptyView": [
+			"explorerSection",
+			"noWorkspace",
+			"noWorkspaceHelp",
+			"openFolder"
 		],
 		"vs/base/browser/ui/actionbar/actionbar": [
 			{
@@ -1959,22 +1962,25 @@
 			"invalidFileNameError",
 			"filePathTooLongError"
 		],
-		"vs/workbench/parts/files/electron-browser/electronFileActions": [
-			"revealInWindows",
-			"revealInMac",
-			"openContainer",
-			"revealActiveFileInWindows",
-			"revealActiveFileInMac",
-			"openActiveFileContainer",
-			"openFileToReveal",
-			"copyPath",
-			"copyPathOfActive",
-			"openFileToCopy",
-			"openFile",
-			"openFolder",
-			"openFileFolder",
-			"openFileInNewWindow",
-			"openFileToShow"
+		"vs/platform/configuration/common/configurationRegistry": [
+			"vscode.extension.contributes.configuration",
+			"vscode.extension.contributes.configuration.title",
+			"vscode.extension.contributes.configuration.properties",
+			"invalid.type",
+			"invalid.title",
+			"invalid.properties"
+		],
+		"vs/workbench/parts/files/browser/fileTracker": [
+			"dirtyFiles"
+		],
+		"vs/workbench/parts/files/browser/editors/textFileEditor": [
+			"textFileEditor",
+			"createFile",
+			"fileEditorWithInputAriaLabel",
+			"fileEditorAriaLabel"
+		],
+		"vs/workbench/parts/files/browser/editors/binaryFileEditor": [
+			"binaryFileEditor"
 		],
 		"vs/workbench/parts/files/electron-browser/textFileServices": [
 			"saveChangesMessage",
@@ -2003,25 +2009,22 @@
 			"saveChangesDetail",
 			"allFiles"
 		],
-		"vs/platform/configuration/common/configurationRegistry": [
-			"vscode.extension.contributes.configuration",
-			"vscode.extension.contributes.configuration.title",
-			"vscode.extension.contributes.configuration.properties",
-			"invalid.type",
-			"invalid.title",
-			"invalid.properties"
-		],
-		"vs/workbench/parts/files/browser/fileTracker": [
-			"dirtyFiles"
-		],
-		"vs/workbench/parts/files/browser/editors/binaryFileEditor": [
-			"binaryFileEditor"
-		],
-		"vs/workbench/parts/files/browser/editors/textFileEditor": [
-			"textFileEditor",
-			"createFile",
-			"fileEditorWithInputAriaLabel",
-			"fileEditorAriaLabel"
+		"vs/workbench/parts/files/electron-browser/electronFileActions": [
+			"revealInWindows",
+			"revealInMac",
+			"openContainer",
+			"revealActiveFileInWindows",
+			"revealActiveFileInMac",
+			"openActiveFileContainer",
+			"openFileToReveal",
+			"copyPath",
+			"copyPathOfActive",
+			"openFileToCopy",
+			"openFile",
+			"openFolder",
+			"openFileFolder",
+			"openFileInNewWindow",
+			"openFileToShow"
 		],
 		"vs/workbench/browser/parts/editor/textDiffEditor": [
 			"textDiffEditor",
@@ -2094,6 +2097,13 @@
 			"currentBranchPlural",
 			"undoLastCommit"
 		],
+		"vs/workbench/parts/debug/browser/debugEditorModelManager": [
+			"breakpointHover",
+			"breakpointDisabledHover",
+			"breakpointUnverifieddHover",
+			"breakpointDirtydHover",
+			"breakpointUnsupported"
+		],
 		"vs/workbench/parts/debug/browser/debugViews": [
 			"variablesSection",
 			"variables",
@@ -2124,12 +2134,11 @@
 				"key": "breakpointsAriaTreeLabel"
 			}
 		],
-		"vs/workbench/parts/debug/browser/debugEditorModelManager": [
-			"breakpointHover",
-			"breakpointDisabledHover",
-			"breakpointUnverifieddHover",
-			"breakpointDirtydHover",
-			"breakpointUnsupported"
+		"vs/workbench/parts/debug/browser/debugEditorContribution": [
+			"addBreakpoint"
+		],
+		"vs/workbench/parts/html/browser/htmlPreviewPart": [
+			"html.voidInput"
 		],
 		"vs/workbench/parts/debug/electron-browser/debugService": [
 			"debuggingStarted",
@@ -2150,9 +2159,6 @@
 			"debugSourceNotAvailable",
 			"debuggingContinued"
 		],
-		"vs/workbench/parts/debug/browser/debugEditorContribution": [
-			"addBreakpoint"
-		],
 		"vs/workbench/parts/extensions/electron-browser/extensionTipsService": [
 			"reallyRecommended",
 			"neverShowAgain",
@@ -2165,17 +2171,14 @@
 			"extensions",
 			"outdatedExtensions"
 		],
+		"vs/workbench/parts/emmet/node/actions/expandAbbreviation": [
+			"expandAbbreviationAction"
+		],
 		"vs/workbench/parts/extensions/electron-browser/extensionEditor": [
 			"license"
 		],
-		"vs/workbench/parts/html/browser/htmlPreviewPart": [
-			"html.voidInput"
-		],
-		"vs/editor/common/modes/modesRegistry": [
-			"plainText.alias"
-		],
-		"vs/workbench/parts/emmet/node/actions/expandAbbreviation": [
-			"expandAbbreviationAction"
+		"vs/workbench/parts/emmet/node/actions/matchingPair": [
+			"matchingPair"
 		],
 		"vs/workbench/parts/emmet/node/actions/balance": [
 			"balanceInward",
@@ -2186,12 +2189,13 @@
 			"abbreviation",
 			"wrapWithAbbreviationAction"
 		],
-		"vs/workbench/parts/emmet/node/actions/matchingPair": [
-			"matchingPair"
-		],
 		"vs/workbench/parts/emmet/node/actions/editPoints": [
 			"previousEditPoint",
 			"nextEditPoint"
+		],
+		"vs/workbench/parts/emmet/node/actions/selectItem": [
+			"selectPreviousItem",
+			"selectNextItem"
 		],
 		"vs/workbench/parts/emmet/node/actions/splitJoinTag": [
 			"splitJoinTag"
@@ -2199,18 +2203,14 @@
 		"vs/workbench/parts/emmet/node/actions/toggleComment": [
 			"toggleComment"
 		],
-		"vs/workbench/parts/emmet/node/actions/selectItem": [
-			"selectPreviousItem",
-			"selectNextItem"
-		],
 		"vs/workbench/parts/emmet/node/actions/removeTag": [
 			"removeTag"
 		],
-		"vs/workbench/parts/emmet/node/actions/mergeLines": [
-			"mergeLines"
-		],
 		"vs/workbench/parts/emmet/node/actions/updateImageSize": [
 			"updateImageSize"
+		],
+		"vs/workbench/parts/emmet/node/actions/mergeLines": [
+			"mergeLines"
 		],
 		"vs/workbench/parts/emmet/node/actions/evaluateMath": [
 			"evaluateMathExpression"
@@ -2220,6 +2220,9 @@
 			"tag",
 			"updateTag"
 		],
+		"vs/workbench/parts/emmet/node/actions/reflectCssValue": [
+			"reflectCSSValue"
+		],
 		"vs/workbench/parts/emmet/node/actions/incrementDecrement": [
 			"incrementNumberByOneTenth",
 			"decrementNumberByOneTenth",
@@ -2228,16 +2231,12 @@
 			"incrementNumberByTen",
 			"decrementNumberByTen"
 		],
-		"vs/workbench/parts/emmet/node/actions/reflectCssValue": [
-			"reflectCSSValue"
+		"vs/workbench/browser/parts/sidebar/sidebarPart": [
+			"focusSideBar",
+			"viewCategory"
 		],
 		"vs/workbench/browser/parts/activitybar/activitybarPart": [
 			"activityBarAriaLabel"
-		],
-		"vs/workbench/browser/parts/panel/panelPart": [
-			"closePanel",
-			"togglePanel",
-			"view"
 		],
 		"vs/workbench/services/history/browser/history": [
 			"devExtensionWindowTitle",
@@ -2253,9 +2252,10 @@
 			"rightGroup",
 			"editorOpenError"
 		],
-		"vs/workbench/browser/parts/sidebar/sidebarPart": [
-			"focusSideBar",
-			"viewCategory"
+		"vs/workbench/browser/parts/panel/panelPart": [
+			"closePanel",
+			"togglePanel",
+			"view"
 		],
 		"vs/workbench/browser/parts/statusbar/statusbarPart": [
 			"canNotRun"
@@ -2302,6 +2302,12 @@
 			"msbuild",
 			"externalCommand"
 		],
+		"vs/workbench/parts/tasks/browser/taskQuickOpen": [
+			"entryAriaLabel",
+			"tasksAriaLabel",
+			"noTasksMatching",
+			"noTasksFound"
+		],
 		"vs/workbench/parts/tasks/node/processRunnerSystem": [
 			"TaskRunnerSystem.noBuildTask",
 			"TaskRunnerSystem.noTestTask",
@@ -2322,12 +2328,6 @@
 			"TaskSystemDetector.buildTaskDetected",
 			"TaskSystemDetector.testTaskDetected"
 		],
-		"vs/workbench/parts/tasks/browser/taskQuickOpen": [
-			"entryAriaLabel",
-			"tasksAriaLabel",
-			"noTasksMatching",
-			"noTasksFound"
-		],
 		"vs/workbench/electron-browser/update": [
 			"updateNow",
 			"later",
@@ -2336,49 +2336,6 @@
 			"updateAvailable",
 			"thereIsUpdateAvailable",
 			"noUpdatesAvailable"
-		],
-		"vs/workbench/api/node/mainThreadMessageService": [
-			"close"
-		],
-		"vs/editor/node/textMate/TMSyntax": [
-			"vscode.extension.contributes.grammars",
-			"vscode.extension.contributes.grammars.language",
-			"vscode.extension.contributes.grammars.scopeName",
-			"vscode.extension.contributes.grammars.path",
-			"vscode.extension.contributes.grammars.injectTo",
-			"invalid.language",
-			"invalid.scopeName",
-			"invalid.path.0",
-			"invalid.injectTo",
-			"invalid.path.1"
-		],
-		"vs/platform/jsonschemas/common/jsonValidationExtensionPoint": [
-			"contributes.jsonValidation",
-			"contributes.jsonValidation.fileMatch",
-			"contributes.jsonValidation.url",
-			"invalid.jsonValidation",
-			"invalid.fileMatch",
-			"invalid.url",
-			"invalid.url.fileschema",
-			"invalid.url.schema"
-		],
-		"vs/editor/node/textMate/TMSnippets": [
-			"vscode.extension.contributes.snippets",
-			"vscode.extension.contributes.snippets-language",
-			"vscode.extension.contributes.snippets-path",
-			"invalid.language",
-			"invalid.path.0",
-			"invalid.path.1"
-		],
-		"vs/editor/common/model/textModelWithTokens": [
-			"mode.tokenizationSupportFailed"
-		],
-		"vs/editor/node/languageConfiguration": [
-			"parseErrors"
-		],
-		"vs/workbench/electron-browser/shell": [
-			"runningAsRoot",
-			"sharedProcessCrashed"
 		],
 		"vs/workbench/electron-browser/actions": [
 			"closeActiveEditor",
@@ -2402,23 +2359,54 @@
 			"closeMessages",
 			"diffLeftRightLabel"
 		],
+		"vs/workbench/api/node/mainThreadMessageService": [
+			"close"
+		],
+		"vs/editor/node/textMate/TMSnippets": [
+			"vscode.extension.contributes.snippets",
+			"vscode.extension.contributes.snippets-language",
+			"vscode.extension.contributes.snippets-path",
+			"invalid.language",
+			"invalid.path.0",
+			"invalid.path.1"
+		],
+		"vs/editor/node/textMate/TMSyntax": [
+			"vscode.extension.contributes.grammars",
+			"vscode.extension.contributes.grammars.language",
+			"vscode.extension.contributes.grammars.scopeName",
+			"vscode.extension.contributes.grammars.path",
+			"vscode.extension.contributes.grammars.injectTo",
+			"invalid.language",
+			"invalid.scopeName",
+			"invalid.path.0",
+			"invalid.injectTo",
+			"invalid.path.1"
+		],
+		"vs/platform/jsonschemas/common/jsonValidationExtensionPoint": [
+			"contributes.jsonValidation",
+			"contributes.jsonValidation.fileMatch",
+			"contributes.jsonValidation.url",
+			"invalid.jsonValidation",
+			"invalid.fileMatch",
+			"invalid.url",
+			"invalid.url.fileschema",
+			"invalid.url.schema"
+		],
+		"vs/editor/node/languageConfiguration": [
+			"parseErrors"
+		],
+		"vs/workbench/electron-browser/shell": [
+			"runningAsRoot",
+			"sharedProcessCrashed"
+		],
+		"vs/editor/common/model/textModelWithTokens": [
+			"mode.tokenizationSupportFailed"
+		],
 		"vs/base/parts/tree/browser/treeDefaults": [
 			"collapse"
 		],
 		"vs/base/browser/ui/toolbar/toolbar": [
 			"more"
-		],
-		"vs/editor/contrib/find/common/findController": [
-			"selectAllOccurencesOfFindMatch",
-			"changeAll.label",
-			"startFindAction",
-			"findNextMatchAction",
-			"findPreviousMatchAction",
-			"nextSelectionMatchFindAction",
-			"previousSelectionMatchFindAction",
-			"startReplace",
-			"moveSelectionToNextFindMatch",
-			"addSelectionToNextFindMatch"
 		],
 		"vs/workbench/parts/git/browser/gitWidgets": [
 			"publishBranch",
@@ -2466,6 +2454,18 @@
 			"ariaLabelStagedChanges",
 			"ariaLabelChanges",
 			"ariaLabelMerge"
+		],
+		"vs/editor/contrib/find/common/findController": [
+			"selectAllOccurencesOfFindMatch",
+			"changeAll.label",
+			"startFindAction",
+			"findNextMatchAction",
+			"findPreviousMatchAction",
+			"nextSelectionMatchFindAction",
+			"previousSelectionMatchFindAction",
+			"startReplace",
+			"moveSelectionToNextFindMatch",
+			"addSelectionToNextFindMatch"
 		],
 		"vs/workbench/parts/debug/browser/breakpointWidget": [
 			"breakpointWidgetPlaceholder",
@@ -2577,11 +2577,11 @@
 			"ignoreTrimWhitespace",
 			"selectionClipboard"
 		],
-		"vs/platform/actions/browser/menuItemActionItem": [
-			"titleAndKb"
-		],
 		"vs/editor/common/config/defaultConfig": [
 			"editorViewAccessibleLabel"
+		],
+		"vs/platform/actions/browser/menuItemActionItem": [
+			"titleAndKb"
 		],
 		"vs/editor/contrib/find/browser/findWidget": [
 			"label.find",
@@ -2599,11 +2599,11 @@
 			"label.matchesLocation",
 			"label.noResults"
 		],
-		"vs/editor/contrib/referenceSearch/browser/referencesController": [
-			"labelLoading"
-		],
 		"vs/editor/contrib/zoneWidget/browser/peekViewWidget": [
 			"label.close"
+		],
+		"vs/editor/contrib/referenceSearch/browser/referencesController": [
+			"labelLoading"
 		],
 		"vs/editor/contrib/hover/browser/modesContentHover": [
 			"modesContentHover.loading"
@@ -2627,11 +2627,11 @@
 			"noResults",
 			"peekView.alternateTitle"
 		],
-		"vs/editor/contrib/rename/common/rename": [
-			"no result"
-		],
 		"vs/editor/common/services/bulkEdit": [
 			"conflict"
+		],
+		"vs/editor/contrib/rename/common/rename": [
+			"no result"
 		],
 		"vs/editor/contrib/rename/browser/renameInputField": [
 			"renameAriaLabel"
@@ -2646,6 +2646,15 @@
 			"suggestionAriaAccepted",
 			"ariaCurrentSuggestionWithDetails",
 			"ariaCurrentSuggestion"
+		],
+		"vs/workbench/parts/files/browser/views/openEditorsViewer": [
+			"editorGroupAriaLabel",
+			"openEditorAriaLabel",
+			"saveAll",
+			"closeAll",
+			"close",
+			"closeOthers",
+			"closeAll"
 		],
 		"vs/workbench/browser/parts/editor/editorActions": [
 			"splitEditor",
@@ -2689,21 +2698,6 @@
 			"quickNavigatePrevious",
 			"focusLastEditorInStack"
 		],
-		"vs/workbench/parts/files/browser/views/openEditorsViewer": [
-			"editorGroupAriaLabel",
-			"openEditorAriaLabel",
-			"saveAll",
-			"closeAll",
-			"close",
-			"closeOthers",
-			"closeAll"
-		],
-		"vs/workbench/browser/parts/editor/binaryEditor": [
-			"binaryEditor"
-		],
-		"vs/workbench/parts/search/browser/replaceService": [
-			"fileReplaceChanges"
-		],
 		"vs/workbench/parts/files/browser/saveErrorHandler": [
 			"overwrite",
 			"retry",
@@ -2718,6 +2712,12 @@
 			"acceptLocalChanges",
 			"conflictingFileHasChanged",
 			"revertLocalChanges"
+		],
+		"vs/workbench/parts/search/browser/replaceService": [
+			"fileReplaceChanges"
+		],
+		"vs/workbench/browser/parts/editor/binaryEditor": [
+			"binaryEditor"
 		],
 		"vs/workbench/parts/git/browser/gitServices": [
 			"cantOpen",
@@ -2744,6 +2744,9 @@
 			"changesFromTreeDesc",
 			"cantOpenResource"
 		],
+		"vs/workbench/parts/debug/browser/debugHover": [
+			"treeAriaLabel"
+		],
 		"vs/workbench/parts/debug/node/rawDebugSession": [
 			"moreInfo",
 			"noDebugAdapterExtensionInstalled",
@@ -2751,13 +2754,6 @@
 			"debugAdapterBinNotFound",
 			"stoppingDebugAdapter",
 			"debugAdapterCrash"
-		],
-		"vs/workbench/services/thread/electron-browser/threadService": [
-			"extensionHostProcess.startupFailDebug",
-			"extensionHostProcess.startupFail",
-			"extensionHostProcess.error",
-			"extensionHostProcess.crash",
-			"reloadWindow"
 		],
 		"vs/workbench/parts/debug/node/debugConfigurationManager": [
 			"vscode.extension.contributes.debuggers",
@@ -2787,15 +2783,19 @@
 			"DebugConfig.failed",
 			"selectDebug"
 		],
-		"vs/workbench/parts/debug/browser/debugHover": [
-			"treeAriaLabel"
-		],
-		"vs/workbench/browser/parts/activitybar/activityAction": [
-			"titleKeybinding"
+		"vs/workbench/services/thread/electron-browser/threadService": [
+			"extensionHostProcess.startupFailDebug",
+			"extensionHostProcess.startupFail",
+			"extensionHostProcess.error",
+			"extensionHostProcess.crash",
+			"reloadWindow"
 		],
 		"vs/workbench/browser/parts/compositePart": [
 			"compositeTitleTooltip",
 			"ariaCompositeToolbarLabel"
+		],
+		"vs/workbench/browser/parts/activitybar/activityAction": [
+			"titleKeybinding"
 		],
 		"vs/workbench/browser/parts/editor/editor.contribution": [
 			"textEditor",
@@ -2818,11 +2818,6 @@
 			"quickOpenAriaLabel",
 			"treeAriaLabel"
 		],
-		"vs/platform/keybinding/browser/keybindingServiceImpl": [
-			"unboundCommands",
-			"first.chord",
-			"missing.chord"
-		],
 		"vs/base/browser/ui/messagelist/messageList": [
 			"alertErrorMessage",
 			"alertWarningMessage",
@@ -2831,6 +2826,11 @@
 			"warning",
 			"info",
 			"close"
+		],
+		"vs/platform/keybinding/browser/keybindingServiceImpl": [
+			"unboundCommands",
+			"first.chord",
+			"missing.chord"
 		],
 		"vs/workbench/parts/tasks/node/processRunnerConfiguration": [
 			"ConfigurationParser.noCommand",
@@ -2847,15 +2847,6 @@
 			"ExecutableParser.isShellCommand",
 			"ExecutableParser.args",
 			"ExecutableParser.invalidCWD"
-		],
-		"vs/workbench/services/message/electron-browser/messageService": [
-			{
-				"key": "yesButton",
-				"comment": [
-					"&& denotes a mnemonic"
-				]
-			},
-			"cancelButton"
 		],
 		"vs/workbench/parts/feedback/browser/feedback": [
 			"sendFeedback",
@@ -2875,12 +2866,6 @@
 			"feedbackSent",
 			"feedbackSendingError"
 		],
-		"vs/workbench/services/request/node/requestService": [
-			"localFileNotFound",
-			"httpConfigurationTitle",
-			"proxy",
-			"strictSSL"
-		],
 		"vs/workbench/electron-browser/integration": [
 			"undo",
 			"redo",
@@ -2889,13 +2874,31 @@
 			"paste",
 			"selectAll"
 		],
+		"vs/workbench/services/message/electron-browser/messageService": [
+			{
+				"key": "yesButton",
+				"comment": [
+					"&& denotes a mnemonic"
+				]
+			},
+			"cancelButton"
+		],
+		"vs/workbench/services/request/node/requestService": [
+			"localFileNotFound",
+			"httpConfigurationTitle",
+			"proxy",
+			"strictSSL"
+		],
+		"vs/editor/common/services/modelServiceImpl": [
+			"indentAutoMigrate"
+		],
 		"vs/workbench/services/files/electron-browser/fileService": [
 			"netVersionError",
 			"installNet",
 			"trashFailed"
 		],
-		"vs/editor/common/services/modelServiceImpl": [
-			"indentAutoMigrate"
+		"vs/workbench/electron-browser/crashReporter": [
+			"telemetry.enableCrashReporting"
 		],
 		"vs/workbench/services/themes/electron-browser/themeService": [
 			"vscode.extension.contributes.themes",
@@ -2908,9 +2911,6 @@
 			"error.cannotloadtheme",
 			"error.cannotparsejson",
 			"error.cannotparse"
-		],
-		"vs/workbench/electron-browser/crashReporter": [
-			"telemetry.enableCrashReporting"
 		],
 		"vs/editor/common/controller/cursor": [
 			"corrupt.commands"
@@ -3019,6 +3019,9 @@
 		]
 	},
 	"messages": {
+		"vs/workbench/parts/search/browser/openAnythingHandler": [
+			"file and symbol results"
+		],
 		"vs/workbench/parts/search/browser/searchViewlet": [
 			"Toggle Search Details",
 			"files to include",
@@ -3046,25 +3049,19 @@
 			"Open Settings",
 			"Search returned {0} results in {1} files"
 		],
-		"vs/workbench/parts/search/browser/openAnythingHandler": [
-			"file and symbol results"
+		"vs/workbench/parts/output/browser/outputPanel": [
+			"{0}, Output panel",
+			"Output panel"
 		],
 		"vs/workbench/parts/debug/browser/debugViewlet": [
 			"There is no currently opened folder.",
 			"Open a folder in order to start debugging."
-		],
-		"vs/workbench/parts/output/browser/outputPanel": [
-			"{0}, Output panel",
-			"Output panel"
 		],
 		"vs/workbench/parts/debug/browser/repl": [
 			"Read Eval Print Loop Panel"
 		],
 		"vs/workbench/parts/extensions/electron-browser/extensionsViewlet": [
 			"Search Extensions in Marketplace"
-		],
-		"vs/code/electron-main/main": [
-			"New Window"
 		],
 		"vs/code/node/cliProcessMain": [
 			"Extension '{0}' not found.",
@@ -3076,6 +3073,66 @@
 			"Extension '{0}' v{1} was successfully installed!",
 			"Uninstalling {0}...",
 			"Extension '{0}' was successfully uninstalled!"
+		],
+		"vs/code/electron-main/main": [
+			"New Window"
+		],
+		"vs/base/common/severity": [
+			"Error",
+			"Warning",
+			"Info"
+		],
+		"vs/base/common/errors": [
+			"{0}. Error code: {1}",
+			"Permission Denied (HTTP {0})",
+			"Permission Denied",
+			"{0} (HTTP {1}: {2})",
+			"{0} (HTTP {1})",
+			"Unknown Connection Error ({0})",
+			"An unknown connection error occurred. Either you are no longer connected to the internet or the server you are connected to is offline.",
+			"{0}: {1}",
+			"An unknown error occurred. Please consult the log for more details.",
+			"A system error occured ({0})",
+			"An unknown error occurred. Please consult the log for more details.",
+			"{0} ({1} errors in total)",
+			"An unknown error occurred. Please consult the log for more details.",
+			"Not Implemented",
+			"Illegal argument: {0}",
+			"Illegal argument",
+			"Illegal state: {0}",
+			"Illegal state",
+			"Failed to load a required file. Either you are no longer connected to the internet or the server you are connected to is offline. Please refresh the browser to try again.",
+			"Failed to load a required file. Please restart the application to try again. Details: {0}"
+		],
+		"vs/platform/extensions/common/abstractExtensionService": [
+			"Extension `{1}` failed to activate. Reason: unknown dependency `{0}`.",
+			"Extension `{1}` failed to activate. Reason: dependency `{0}` failed to activate.",
+			"Extension `{0}` failed to activate. Reason: more than 10 levels of dependencies (most likely a dependency loop).",
+			"Activating extension `{0}` failed: {1}."
+		],
+		"vs/editor/common/services/modeServiceImpl": [
+			"Contributes language declarations.",
+			"ID of the language.",
+			"Name aliases for the language.",
+			"File extensions associated to the language.",
+			"File names associated to the language.",
+			"File name glob patterns associated to the language.",
+			"Mime types associated to the language.",
+			"A regular expression matching the first line of a file of the language.",
+			"A relative path to a file containing configuration options for the language.",
+			"Empty value for `contributes.{0}`",
+			"property `{0}` is mandatory and must be of type `string`",
+			"property `{0}` can be omitted and must be of type `string[]`",
+			"property `{0}` can be omitted and must be of type `string[]`",
+			"property `{0}` can be omitted and must be of type `string`",
+			"property `{0}` can be omitted and must be of type `string`",
+			"property `{0}` can be omitted and must be of type `string[]`",
+			"property `{0}` can be omitted and must be of type `string[]`",
+			"Invalid `contributes.{0}`. Expected an array."
+		],
+		"vs/workbench/browser/actions/toggleStatusbarVisibility": [
+			"Toggle Status Bar Visibility",
+			"View"
 		],
 		"vs/platform/actions/browser/menusExtensionPoint": [
 			"menu items must be an arry",
@@ -3110,31 +3167,29 @@
 			"Menu item references the same command as default and alt-command",
 			"Sorry, but currently only the 'navigation' group of the 'editor/title' menu supports alt-commands"
 		],
-		"vs/base/common/errors": [
-			"{0}. Error code: {1}",
-			"Permission Denied (HTTP {0})",
-			"Permission Denied",
-			"{0} (HTTP {1}: {2})",
-			"{0} (HTTP {1})",
-			"Unknown Connection Error ({0})",
-			"An unknown connection error occurred. Either you are no longer connected to the internet or the server you are connected to is offline.",
-			"{0}: {1}",
-			"An unknown error occurred. Please consult the log for more details.",
-			"A system error occured ({0})",
-			"An unknown error occurred. Please consult the log for more details.",
-			"{0} ({1} errors in total)",
-			"An unknown error occurred. Please consult the log for more details.",
-			"Not Implemented",
-			"Illegal argument: {0}",
-			"Illegal argument",
-			"Illegal state: {0}",
-			"Illegal state",
-			"Failed to load a required file. Either you are no longer connected to the internet or the server you are connected to is offline. Please refresh the browser to try again.",
-			"Failed to load a required file. Please restart the application to try again. Details: {0}"
+		"vs/workbench/browser/actions/toggleSidebarPosition": [
+			"Toggle Side Bar Position",
+			"View"
+		],
+		"vs/workbench/parts/quickopen/browser/quickopen.contribution": [
+			"Show and Run Commands",
+			"Go to Line",
+			"Go to Line",
+			"Go to Symbol in File",
+			"Go to Symbol in File by Category",
+			"Show Help"
 		],
 		"vs/workbench/browser/actions/toggleSidebarVisibility": [
 			"Toggle Side Bar Visibility",
 			"View"
+		],
+		"vs/workbench/browser/parts/editor/editorPicker": [
+			"{0}, editor group picker",
+			"Group: {0}",
+			"No matching opened editor found in group",
+			"List of opened editors is currently empty",
+			"No matching opened editor found",
+			"List of opened editors is currently empty"
 		],
 		"vs/workbench/browser/actions/openSettings": [
 			"Unable to create '{0}' ({1}).",
@@ -3155,10 +3210,6 @@
 			"Default Keyboard Shortcuts",
 			"Preferences"
 		],
-		"vs/workbench/browser/actions/toggleSidebarPosition": [
-			"Toggle Side Bar Position",
-			"View"
-		],
 		"vs/workbench/browser/actions/configureLocale": [
 			"Configure Language",
 			"Defines VSCode's display language.",
@@ -3167,30 +3218,7 @@
 			"Unable to create '{0}' ({1}).",
 			"The UI Language to use."
 		],
-		"vs/workbench/browser/actions/toggleStatusbarVisibility": [
-			"Toggle Status Bar Visibility",
-			"View"
-		],
-		"vs/workbench/parts/quickopen/browser/quickopen.contribution": [
-			"Show and Run Commands",
-			"Go to Line",
-			"Go to Line",
-			"Go to Symbol in File",
-			"Go to Symbol in File by Category",
-			"Show Help"
-		],
-		"vs/workbench/browser/parts/editor/editorPicker": [
-			"{0}, editor group picker",
-			"Group: {0}",
-			"No matching opened editor found in group",
-			"List of opened editors is currently empty",
-			"No matching opened editor found",
-			"List of opened editors is currently empty"
-		],
 		"vs/workbench/parts/files/browser/fileActions.contribution": [
-			"Files"
-		],
-		"vs/workbench/parts/files/electron-browser/files.electron.contribution": [
 			"Files"
 		],
 		"vs/workbench/parts/files/browser/files.contribution": [
@@ -3226,6 +3254,9 @@
 			"Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.",
 			"The glob pattern to match file paths against. Set to true or false to enable or disable the pattern.",
 			"Additional check on the siblings of a matching file. Use $(basename) as variable for the matching file name."
+		],
+		"vs/workbench/parts/files/electron-browser/files.electron.contribution": [
+			"Files"
 		],
 		"vs/workbench/parts/git/browser/gitQuickOpen": [
 			"{0}, git",
@@ -3263,15 +3294,15 @@
 			"Debug",
 			"Launch configuration '{0}' does not exist."
 		],
+		"vs/workbench/parts/html/browser/html.contribution": [
+			"Html Preview"
+		],
 		"vs/workbench/parts/extensions/electron-browser/extensions.contribution": [
 			"Manage Extensions",
 			"Install Gallery Extensions",
 			"Extension",
 			"Extensions",
 			"View"
-		],
-		"vs/workbench/parts/html/browser/html.contribution": [
-			"Html Preview"
 		],
 		"vs/workbench/parts/extensions/electron-browser/extensionsQuickOpen": [
 			"Press Enter to manage your extensions.",
@@ -3301,6 +3332,16 @@
 			"When enabled, emmet abbreviations are expanded when pressing TAB.",
 			"Preferences used to modify behavior of some actions and resolvers of Emmet.",
 			"Define profile for specified syntax or use your own profile with specific rules."
+		],
+		"vs/workbench/parts/execution/electron-browser/terminal.contribution": [
+			"External Terminal",
+			"Customizes which terminal to run on Windows.",
+			"Customizes which terminal application to run on OS X.",
+			"Customizes which terminal to run on Linux.",
+			"Open New Command Prompt",
+			"Open New Terminal",
+			"Open in Command Prompt",
+			"Open in Terminal"
 		],
 		"vs/workbench/parts/tasks/electron-browser/task.contribution": [
 			"Tasks are only available on a workspace folder.",
@@ -3382,16 +3423,6 @@
 			"Mac specific build configuration",
 			"Linux specific build configuration"
 		],
-		"vs/workbench/parts/execution/electron-browser/terminal.contribution": [
-			"External Terminal",
-			"Customizes which terminal to run on Windows.",
-			"Customizes which terminal application to run on OS X.",
-			"Customizes which terminal to run on Linux.",
-			"Open New Command Prompt",
-			"Open New Terminal",
-			"Open in Command Prompt",
-			"Open in Terminal"
-		],
 		"vs/workbench/parts/snippets/electron-browser/snippets.contribution": [
 			"Snippets",
 			"Select Language for Snippet",
@@ -3418,6 +3449,18 @@
 			"Never Show Again",
 			"Read More"
 		],
+		"vs/workbench/electron-browser/main.contribution": [
+			"View",
+			"Developer",
+			"File",
+			"Window",
+			"When enabled, will open files in a new window instead of reusing an existing instance.",
+			"Controls how folders are being reopened after a restart. Select 'none' to never reopen a folder, 'one' to reopen the last folder you worked on or 'all' to reopen all folders of your last session.",
+			"Controls if a window should restore to full screen mode if it was exited in full screen mode.",
+			"Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.",
+			"Update",
+			"Configure whether you receive automatic updates from an update channel. Requires a restart after change."
+		],
 		"vs/workbench/electron-browser/darwin/cli.contribution": [
 			"Install '{0}' command in PATH",
 			"Please remove the alias referencing '{0}' in '{1}' (line {2}) and retry this action.",
@@ -3439,87 +3482,29 @@
 			"Remember you can always run the '{0}' action from the Command Palette.",
 			"Shell Command"
 		],
-		"vs/workbench/electron-browser/main.contribution": [
-			"View",
-			"Developer",
-			"File",
-			"Window",
-			"When enabled, will open files in a new window instead of reusing an existing instance.",
-			"Controls how folders are being reopened after a restart. Select 'none' to never reopen a folder, 'one' to reopen the last folder you worked on or 'all' to reopen all folders of your last session.",
-			"Controls if a window should restore to full screen mode if it was exited in full screen mode.",
-			"Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.",
-			"Update",
-			"Configure whether you receive automatic updates from an update channel. Requires a restart after change."
+		"vs/workbench/parts/search/browser/openFileHandler": [
+			"{0}, file picker",
+			"search results"
 		],
-		"vs/platform/jsonschemas/common/jsonContributionRegistry": [
-			"Describes a JSON file using a schema. See json-schema.org for more info.",
-			"A unique identifier for the schema.",
-			"The schema to verify this document against ",
-			"A descriptive title of the element",
-			"A long description of the element. Used in hover menus and suggestions.",
-			"A default value. Used by suggestions.",
-			"A number that should cleanly divide the current value (i.e. have no remainder)",
-			"The maximum numerical value, inclusive by default.",
-			"Makes the maximum property exclusive.",
-			"The minimum numerical value, inclusive by default.",
-			"Makes the minimum property exclusive.",
-			"The maximum length of a string.",
-			"The minimum length of a string.",
-			"A regular expression to match the string against. It is not implicitly anchored.",
-			"For arrays, only when items is set as an array. If it is a schema, then this schema validates items after the ones specified by the items array. If it is false, then additional items will cause validation to fail.",
-			"For arrays. Can either be a schema to validate every element against or an array of schemas to validate each item against in order (the first schema will validate the first element, the second schema will validate the second element, and so on.",
-			"The maximum number of items that can be inside an array. Inclusive.",
-			"The minimum number of items that can be inside an array. Inclusive.",
-			"If all of the items in the array must be unique. Defaults to false.",
-			"The maximum number of properties an object can have. Inclusive.",
-			"The minimum number of properties an object can have. Inclusive.",
-			"An array of strings that lists the names of all properties required on this object.",
-			"Either a schema or a boolean. If a schema, then used to validate all properties not matched by 'properties' or 'patternProperties'. If false, then any properties not matched by either will cause this schema to fail.",
-			"Not used for validation. Place subschemas here that you wish to reference inline with $ref",
-			"A map of property names to schemas for each property.",
-			"A map of regular expressions on property names to schemas for matching properties.",
-			"A map of property names to either an array of property names or a schema. An array of property names means the property named in the key depends on the properties in the array being present in the object in order to be valid. If the value is a schema, then the schema is only applied to the object if the property in the key exists on the object.",
-			"The set of literal values that are valid",
-			"Either a string of one of the basic schema types (number, integer, null, array, object, boolean, string) or an array of strings specifying a subset of those types.",
-			"Describes the format expected for the value.",
-			"An array of schemas, all of which must match.",
-			"An array of schemas, where at least one must match.",
-			"An array of schemas, exactly one of which must match.",
-			"A schema which must not match."
+		"vs/base/parts/quickopen/browser/quickOpenModel": [
+			"{0}, picker",
+			"picker"
 		],
-		"vs/editor/common/modes/supports/suggestSupport": [
-			"Enable word based suggestions."
+		"vs/workbench/parts/search/browser/openSymbolHandler": [
+			"{0}, symbols picker",
+			"symbol results",
+			"No symbols matching",
+			"Type to search for symbols"
 		],
-		"vs/platform/extensions/common/abstractExtensionService": [
-			"Extension `{1}` failed to activate. Reason: unknown dependency `{0}`.",
-			"Extension `{1}` failed to activate. Reason: dependency `{0}` failed to activate.",
-			"Extension `{0}` failed to activate. Reason: more than 10 levels of dependencies (most likely a dependency loop).",
-			"Activating extension `{0}` failed: {1}."
+		"vs/workbench/browser/quickopen": [
+			"No results matching",
+			"No results found",
+			"{0}, command",
+			"No commands matching"
 		],
-		"vs/base/common/severity": [
-			"Error",
-			"Warning",
-			"Info"
-		],
-		"vs/editor/common/services/modeServiceImpl": [
-			"Contributes language declarations.",
-			"ID of the language.",
-			"Name aliases for the language.",
-			"File extensions associated to the language.",
-			"File names associated to the language.",
-			"File name glob patterns associated to the language.",
-			"Mime types associated to the language.",
-			"A regular expression matching the first line of a file of the language.",
-			"A relative path to a file containing configuration options for the language.",
-			"Empty value for `contributes.{0}`",
-			"property `{0}` is mandatory and must be of type `string`",
-			"property `{0}` can be omitted and must be of type `string[]`",
-			"property `{0}` can be omitted and must be of type `string[]`",
-			"property `{0}` can be omitted and must be of type `string`",
-			"property `{0}` can be omitted and must be of type `string`",
-			"property `{0}` can be omitted and must be of type `string[]`",
-			"property `{0}` can be omitted and must be of type `string[]`",
-			"Invalid `contributes.{0}`. Expected an array."
+		"vs/platform/message/common/message": [
+			"Close",
+			"Cancel"
 		],
 		"vs/languages/html/common/htmlTags": [
 			"The html element represents the root of an HTML document.",
@@ -3665,99 +3650,64 @@
 			"A toggle is an animated switch which binds a given model to a boolean. Allows dragging of the switch's nub. The toggle behaves like any AngularJS checkbox otherwise.",
 			"Child of ionNavView. A container for view content and any navigational and header bar information."
 		],
-		"vs/base/browser/ui/aria/aria": [
-			"{0} (occurred again)"
+		"vs/editor/common/modes/supports/suggestSupport": [
+			"Enable word based suggestions."
 		],
-		"vs/base/browser/ui/findinput/findInput": [
-			"Use Regular Expression",
-			"Match Whole Word",
-			"Match Case",
-			"input"
+		"vs/platform/jsonschemas/common/jsonContributionRegistry": [
+			"Describes a JSON file using a schema. See json-schema.org for more info.",
+			"A unique identifier for the schema.",
+			"The schema to verify this document against ",
+			"A descriptive title of the element",
+			"A long description of the element. Used in hover menus and suggestions.",
+			"A default value. Used by suggestions.",
+			"A number that should cleanly divide the current value (i.e. have no remainder)",
+			"The maximum numerical value, inclusive by default.",
+			"Makes the maximum property exclusive.",
+			"The minimum numerical value, inclusive by default.",
+			"Makes the minimum property exclusive.",
+			"The maximum length of a string.",
+			"The minimum length of a string.",
+			"A regular expression to match the string against. It is not implicitly anchored.",
+			"For arrays, only when items is set as an array. If it is a schema, then this schema validates items after the ones specified by the items array. If it is false, then additional items will cause validation to fail.",
+			"For arrays. Can either be a schema to validate every element against or an array of schemas to validate each item against in order (the first schema will validate the first element, the second schema will validate the second element, and so on.",
+			"The maximum number of items that can be inside an array. Inclusive.",
+			"The minimum number of items that can be inside an array. Inclusive.",
+			"If all of the items in the array must be unique. Defaults to false.",
+			"The maximum number of properties an object can have. Inclusive.",
+			"The minimum number of properties an object can have. Inclusive.",
+			"An array of strings that lists the names of all properties required on this object.",
+			"Either a schema or a boolean. If a schema, then used to validate all properties not matched by 'properties' or 'patternProperties'. If false, then any properties not matched by either will cause this schema to fail.",
+			"Not used for validation. Place subschemas here that you wish to reference inline with $ref",
+			"A map of property names to schemas for each property.",
+			"A map of regular expressions on property names to schemas for matching properties.",
+			"A map of property names to either an array of property names or a schema. An array of property names means the property named in the key depends on the properties in the array being present in the object in order to be valid. If the value is a schema, then the schema is only applied to the object if the property in the key exists on the object.",
+			"The set of literal values that are valid",
+			"Either a string of one of the basic schema types (number, integer, null, array, object, boolean, string) or an array of strings specifying a subset of those types.",
+			"Describes the format expected for the value.",
+			"An array of schemas, all of which must match.",
+			"An array of schemas, where at least one must match.",
+			"An array of schemas, exactly one of which must match.",
+			"A schema which must not match."
 		],
-		"vs/base/browser/ui/inputbox/inputBox": [
-			"Error: {0}",
-			"Warning: {0}",
-			"Info: {0}"
+		"vs/workbench/parts/git/node/git.lib": [
+			"File seems to be binary and cannot be opened as text"
+		],
+		"vs/workbench/parts/git/browser/views/gitless/gitlessView": [
+			"You can either install it with {0}, download it from {1} or install the {2} command line developer tools, by simply typing {3} on a Terminal prompt.",
+			"You can either install it with {0} or download it from {1}.",
+			"You can download it from {0}.",
+			"You can download it from {0}.",
+			"It looks like git is not installed on your system.",
+			"Once git is installed, please restart {0}."
 		],
 		"vs/workbench/browser/viewlet": [
 			"Collapse All",
 			"{0} actions",
 			"{0} actions"
 		],
-		"vs/platform/message/common/message": [
-			"Close",
-			"Cancel"
-		],
-		"vs/workbench/parts/search/browser/searchResultsView": [
-			"{0} matches found",
-			"{0} match found",
-			"no matches",
-			"{0} matches in file {1} of folder {2}, Search result",
-			"No matches",
-			"Replace preview result, {0}",
-			"{0}, Search result"
-		],
-		"vs/workbench/parts/search/browser/searchActions": [
-			"Show Search",
-			"Replace in Files",
-			"Find in Folder",
-			"Refresh",
-			"Clear Search Results",
-			"Remove",
-			"Replace All",
-			"Replace",
-			"Open Settings"
-		],
-		"vs/workbench/parts/search/browser/patternInputWidget": [
-			"input",
-			"Use Glob Patterns",
-			"The pattern to match. e.g. **\\*\\*/*.js** to match all JavaScript files or **myFolder/\\*\\*** to match that folder with all children.\n\n**Reference**:\n**\\*** matches 0 or more characters\n**?** matches 1 character\n**\\*\\*** matches zero or more directories\n**[a-z]** matches a range of characters\n**{a,b}** matches any of the patterns)"
-		],
-		"vs/base/common/keyCodes": [
-			"Windows",
-			"Control",
-			"Shift",
-			"Alt",
-			"Command",
-			"Windows",
-			"Ctrl",
-			"Shift",
-			"Alt",
-			"Command",
-			"Windows"
-		],
-		"vs/workbench/parts/search/browser/searchWidget": [
-			"Replace All (Submit Search to Enable)",
-			"Replace All",
-			"Toggle Replace",
-			"Search: Type Search Term and press Enter to search or Escape to cancel",
-			"Search",
-			"Replace: Type replace term and press Enter to preview or Escape to cancel",
-			"Replace",
-			"Expression matches everything"
-		],
-		"vs/base/parts/quickopen/browser/quickOpenModel": [
-			"{0}, picker",
-			"picker"
-		],
-		"vs/workbench/parts/search/browser/openFileHandler": [
-			"{0}, file picker",
-			"search results"
-		],
-		"vs/workbench/parts/search/browser/openSymbolHandler": [
-			"{0}, symbols picker",
-			"symbol results",
-			"No symbols matching",
-			"Type to search for symbols"
-		],
-		"vs/workbench/browser/quickopen": [
-			"No results matching",
-			"No results found",
-			"{0}, command",
-			"No commands matching"
-		],
-		"vs/workbench/parts/git/node/git.lib": [
-			"File seems to be binary and cannot be opened as text"
+		"vs/workbench/parts/git/browser/views/notroot/notrootView": [
+			"This directory seems to be contained in a git repository.",
+			"Open the repository's root directory in order to access Git features."
 		],
 		"vs/workbench/parts/git/browser/gitWorkbenchContributions": [
 			"Running git status",
@@ -3774,10 +3724,6 @@
 			"Whether long commit messages should be warned about.",
 			"Always allow large repositories to be managed by Code."
 		],
-		"vs/workbench/parts/git/browser/views/empty/emptyView": [
-			"This workspace isn't yet under git source control.",
-			"Initialize git repository"
-		],
 		"vs/workbench/parts/git/browser/views/changes/changesView": [
 			"Please provide a commit message. You can always press **{0}** to commit changes. If there are any staged changes, only those will be committed; otherwise, all changes will.",
 			"Once there are some changes to commit, type in the commit message and either press **{0}** to commit changes. If there are any staged changes, only those will be committed; otherwise, all changes will.",
@@ -3787,21 +3733,13 @@
 			"Git Changes View",
 			"Show Git Output"
 		],
+		"vs/workbench/parts/git/browser/views/empty/emptyView": [
+			"This workspace isn't yet under git source control.",
+			"Initialize git repository"
+		],
 		"vs/workbench/parts/git/browser/views/noworkspace/noworkspaceView": [
 			"There is no currently opened folder.",
 			"Open a folder with a Git repository in order to access Git features."
-		],
-		"vs/workbench/parts/git/browser/views/gitless/gitlessView": [
-			"You can either install it with {0}, download it from {1} or install the {2} command line developer tools, by simply typing {3} on a Terminal prompt.",
-			"You can either install it with {0} or download it from {1}.",
-			"You can download it from {0}.",
-			"You can download it from {0}.",
-			"It looks like git is not installed on your system.",
-			"Once git is installed, please restart {0}."
-		],
-		"vs/workbench/parts/git/browser/views/notroot/notrootView": [
-			"This directory seems to be contained in a git repository.",
-			"Open the repository's root directory in order to access Git features."
 		],
 		"vs/workbench/parts/git/browser/views/disabled/disabledView": [
 			"Git is disabled in the settings."
@@ -3810,6 +3748,84 @@
 			"Your repository appears to have many active changes.\nThis can cause Code to become very slow.",
 			"You can permanently disable this warning with the following setting:",
 			"Allow large repositories"
+		],
+		"vs/base/browser/ui/aria/aria": [
+			"{0} (occurred again)"
+		],
+		"vs/base/browser/ui/findinput/findInput": [
+			"Use Regular Expression",
+			"Match Whole Word",
+			"Match Case",
+			"input"
+		],
+		"vs/base/browser/ui/inputbox/inputBox": [
+			"Error: {0}",
+			"Warning: {0}",
+			"Info: {0}"
+		],
+		"vs/workbench/parts/search/browser/patternInputWidget": [
+			"input",
+			"Use Glob Patterns",
+			"The pattern to match. e.g. **\\*\\*/*.js** to match all JavaScript files or **myFolder/\\*\\*** to match that folder with all children.\n\n**Reference**:\n**\\*** matches 0 or more characters\n**?** matches 1 character\n**\\*\\*** matches zero or more directories\n**[a-z]** matches a range of characters\n**{a,b}** matches any of the patterns)"
+		],
+		"vs/workbench/parts/search/browser/searchResultsView": [
+			"{0} matches found",
+			"{0} match found",
+			"no matches",
+			"{0} matches in file {1} of folder {2}, Search result",
+			"No matches",
+			"Replace preview result, {0}",
+			"{0}, Search result"
+		],
+		"vs/workbench/parts/search/browser/searchWidget": [
+			"Replace All (Submit Search to Enable)",
+			"Replace All",
+			"Toggle Replace",
+			"Search: Type Search Term and press Enter to search or Escape to cancel",
+			"Search",
+			"Replace: Type replace term and press Enter to preview or Escape to cancel",
+			"Replace",
+			"Expression matches everything"
+		],
+		"vs/workbench/parts/search/browser/searchActions": [
+			"Show Search",
+			"Replace in Files",
+			"Find in Folder",
+			"Refresh",
+			"Clear Search Results",
+			"Remove",
+			"Replace All",
+			"Replace",
+			"Open Settings"
+		],
+		"vs/workbench/parts/output/common/outputEditorInput": [
+			"Output",
+			"for '{0}'"
+		],
+		"vs/base/common/keyCodes": [
+			"Windows",
+			"Control",
+			"Shift",
+			"Alt",
+			"Command",
+			"Windows",
+			"Ctrl",
+			"Shift",
+			"Alt",
+			"Command",
+			"Windows"
+		],
+		"vs/workbench/browser/parts/editor/stringEditor": [
+			"Text Editor",
+			"{0}. Readonly text editor.",
+			"Readonly text editor.",
+			"{0}. Untitled file text editor.",
+			"Untitled file text editor."
+		],
+		"vs/workbench/parts/output/browser/outputActions": [
+			"Toggle Output",
+			"Clear Output",
+			"Switch to Output"
 		],
 		"vs/workbench/parts/debug/browser/debugActionItems": [
 			"No Configurations"
@@ -3855,22 +3871,6 @@
 			"New Output in Debug Console",
 			"Start Without Debugging"
 		],
-		"vs/workbench/browser/parts/editor/stringEditor": [
-			"Text Editor",
-			"{0}. Readonly text editor.",
-			"Readonly text editor.",
-			"{0}. Untitled file text editor.",
-			"Untitled file text editor."
-		],
-		"vs/workbench/parts/output/common/outputEditorInput": [
-			"Output",
-			"for '{0}'"
-		],
-		"vs/workbench/parts/output/browser/outputActions": [
-			"Toggle Output",
-			"Clear Output",
-			"Switch to Output"
-		],
 		"vs/workbench/parts/debug/browser/replViewer": [
 			"Object state is captured from first evaluation",
 			"Click to follow (Cmd + click opens to the side)",
@@ -3885,6 +3885,12 @@
 			"Please start a debug session to evaluate",
 			"Unknown stack location",
 			"Only primitive values are shown for this object."
+		],
+		"vs/platform/extensionManagement/common/extensionManagement": [
+			"Extensions"
+		],
+		"vs/workbench/parts/extensions/electron-browser/extensionsInput": [
+			"Extension: {0}"
 		],
 		"vs/workbench/parts/extensions/electron-browser/extensionsActions": [
 			"Install",
@@ -3904,24 +3910,6 @@
 			"Show Popular Extensions",
 			"Show Extension Recommendations",
 			"Show Installed Extensions"
-		],
-		"vs/workbench/parts/extensions/electron-browser/extensionsInput": [
-			"Extension: {0}"
-		],
-		"vs/platform/extensionManagement/common/extensionManagement": [
-			"Extensions"
-		],
-		"vs/workbench/parts/terminal/electron-browser/terminalActions": [
-			"Toggle Integrated Terminal",
-			"Terminal: Kill the Active Terminal Instance",
-			"Kill Terminal",
-			"Terminal: Create New Integrated Terminal",
-			"New Terminal",
-			"Terminal: Focus Terminal",
-			"Terminal: Focus Next Terminal",
-			"Terminal: Focus Previous Terminal",
-			"Terminal: Run Selected Text In Active Terminal",
-			"Terminal: Switch Terminal Instance"
 		],
 		"vs/workbench/parts/markers/browser/markersActionProvider": [
 			"Remove"
@@ -3960,11 +3948,36 @@
 			"Problem: {0} at line {1} and column {2}",
 			"Errors and Warnings"
 		],
+		"vs/workbench/parts/terminal/electron-browser/terminalActions": [
+			"Toggle Integrated Terminal",
+			"Terminal: Kill the Active Terminal Instance",
+			"Kill Terminal",
+			"Terminal: Create New Integrated Terminal",
+			"New Terminal",
+			"Terminal: Focus Terminal",
+			"Terminal: Focus Next Terminal",
+			"Terminal: Focus Previous Terminal",
+			"Terminal: Run Selected Text In Active Terminal",
+			"Terminal: Switch Terminal Instance"
+		],
 		"vs/workbench/node/extensionHostMain": [
 			"Overwriting extension {0} with {1}.",
 			"Loading development extension at {0}",
 			"Overwriting extension {0} with {1}.",
 			"Path {0} does not point to a valid extension test runner."
+		],
+		"vs/platform/extensionManagement/node/extensionManagementService": [
+			"Extension invalid: package.json is not a JSON file.",
+			"Extension invalid: manifest name mismatch.",
+			"Extension invalid: manifest publisher mismatch.",
+			"Extension invalid: manifest version mismatch.",
+			"Please restart Code before reinstalling {0}.",
+			"Couldn't find a compatible version of {0} with this version of Code.",
+			"Could not find extension"
+		],
+		"vs/platform/telemetry/common/telemetryService": [
+			"Telemetry",
+			"Enable usage data and errors to be sent to Microsoft."
 		],
 		"vs/code/node/argv": [
 			"Open a diff editor. Requires to pass two file paths as arguments.",
@@ -4097,6 +4110,9 @@
 			"\nVersion {0}\nCommit {1}\nDate {2}\nShell {3}\nRenderer {4}\nNode {5}",
 			"OK"
 		],
+		"vs/workbench/parts/git/electron-main/askpassService": [
+			"Git"
+		],
 		"vs/code/electron-main/windows": [
 			"You can still access the menu bar by pressing the **Alt** key.",
 			"OK",
@@ -4112,21 +4128,32 @@
 			"The window has crashed",
 			"We are sorry for the inconvenience! You can reopen the window to continue where you left off."
 		],
-		"vs/workbench/parts/git/electron-main/askpassService": [
-			"Git"
+		"vs/editor/common/modes/modesRegistry": [
+			"Plain Text"
 		],
-		"vs/platform/extensionManagement/node/extensionManagementService": [
-			"Extension invalid: package.json is not a JSON file.",
-			"Extension invalid: manifest name mismatch.",
-			"Extension invalid: manifest publisher mismatch.",
-			"Extension invalid: manifest version mismatch.",
-			"Please restart Code before reinstalling {0}.",
-			"Couldn't find a compatible version of {0} with this version of Code.",
-			"Could not find extension"
-		],
-		"vs/platform/telemetry/common/telemetryService": [
-			"Telemetry",
-			"Enable usage data and errors to be sent to Microsoft."
+		"vs/platform/extensions/common/extensionsRegistry": [
+			"Got empty extension description",
+			"property `{0}` is mandatory and must be of type `string`",
+			"property `{0}` is mandatory and must be of type `string`",
+			"property `{0}` is mandatory and must be of type `string`",
+			"property `{0}` is mandatory and must be of type `object`",
+			"property `{0}` is mandatory and must be of type `string`",
+			"property `{0}` can be omitted or must be of type `string[]`",
+			"property `{0}` can be omitted or must be of type `string[]`",
+			"properties `{0}` and `{1}` must both be specified or must both be omitted",
+			"property `{0}` can be omitted or must be of type `string`",
+			"Expected `main` ({0}) to be included inside extension's folder ({1}). This might make the extension non-portable.",
+			"properties `{0}` and `{1}` must both be specified or must both be omitted",
+			"The display name for the extension used in the VS Code gallery.",
+			"The categories used by the VS Code gallery to categorize the extension.",
+			"Banner used in the VS Code marketplace.",
+			"The banner color on the VS Code marketplace page header.",
+			"The color theme for the font used in the banner.",
+			"The publisher of the VS Code extension.",
+			"Activation events for the VS Code extension.",
+			"Dependencies to other extensions. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.",
+			"Script executed before the package is published as a VS Code extension.",
+			"All contributions of the VS Code extension represented by this package."
 		],
 		"vs/editor/contrib/accessibility/browser/accessibility": [
 			"Show Accessibility Help",
@@ -4138,19 +4165,19 @@
 			"Pressing Tab in this editor will move focus to the next focusable element. The command {0} is currently not triggerable by a keybinding.",
 			"You can dismiss this tooltip and return to the editor by pressing Escape."
 		],
-		"vs/editor/contrib/clipboard/browser/clipboard": [
-			"Cut",
-			"Copy",
-			"Paste"
-		],
-		"vs/editor/contrib/contextmenu/browser/contextmenu": [
-			"Show Editor Context Menu"
-		],
 		"vs/editor/contrib/comment/common/comment": [
 			"Toggle Line Comment",
 			"Add Line Comment",
 			"Remove Line Comment",
 			"Toggle Block Comment"
+		],
+		"vs/editor/contrib/contextmenu/browser/contextmenu": [
+			"Show Editor Context Menu"
+		],
+		"vs/editor/contrib/clipboard/browser/clipboard": [
+			"Cut",
+			"Copy",
+			"Paste"
 		],
 		"vs/editor/contrib/format/common/formatActions": [
 			"Format Code"
@@ -4177,6 +4204,10 @@
 			"Replace with Previous Value",
 			"Replace with Next Value"
 		],
+		"vs/editor/contrib/carretOperations/common/carretOperations": [
+			"Move Carret Left",
+			"Move Carret Right"
+		],
 		"vs/editor/contrib/linesOperations/common/linesOperations": [
 			"Delete Line",
 			"Sort Lines Ascending",
@@ -4191,23 +4222,19 @@
 			"Insert Line Above",
 			"Insert Line Below"
 		],
-		"vs/editor/contrib/carretOperations/common/carretOperations": [
-			"Move Carret Left",
-			"Move Carret Right"
-		],
 		"vs/editor/contrib/links/browser/links": [
 			"Cmd + click to follow link",
 			"Ctrl + click to follow link",
 			"Invalid URI: cannot open {0}",
 			"Open Link"
 		],
+		"vs/editor/contrib/parameterHints/browser/parameterHints": [
+			"Trigger Parameter Hints"
+		],
 		"vs/editor/contrib/multicursor/common/multicursor": [
 			"Add Cursor Above",
 			"Add Cursor Below",
 			"Create Multiple Cursors from Selected Lines"
-		],
-		"vs/editor/contrib/parameterHints/browser/parameterHints": [
-			"Trigger Parameter Hints"
 		],
 		"vs/editor/contrib/quickFix/browser/quickFix": [
 			"Quick Fix"
@@ -4220,12 +4247,15 @@
 		"vs/editor/contrib/rename/browser/rename": [
 			"Rename Symbol"
 		],
+		"vs/editor/contrib/smartSelect/common/jumpToBracket": [
+			"Go to Bracket"
+		],
 		"vs/editor/contrib/smartSelect/common/smartSelect": [
 			"Expand Select",
 			"Shrink Select"
 		],
-		"vs/editor/contrib/smartSelect/common/jumpToBracket": [
-			"Go to Bracket"
+		"vs/editor/contrib/toggleWordWrap/common/toggleWordWrap": [
+			"View: Toggle Word Wrap"
 		],
 		"vs/editor/contrib/suggest/browser/suggest": [
 			"Trigger Suggest"
@@ -4240,8 +4270,16 @@
 			"For your current keyboard layout press ",
 			"You won't be able to produce this key combination under your current keyboard layout."
 		],
-		"vs/editor/contrib/toggleWordWrap/common/toggleWordWrap": [
-			"View: Toggle Word Wrap"
+		"vs/editor/contrib/indentation/common/indentation": [
+			"Configured Tab Size",
+			"Select Tab Size for Current File",
+			"Convert Indentation to Spaces",
+			"Convert Indentation to Tabs",
+			"Indent Using Spaces",
+			"Indent Using Tabs",
+			"Detect Indentation from Content",
+			"Toggle Render Whitespace",
+			"Toggle Control Characters"
 		],
 		"vs/editor/contrib/folding/browser/folding": [
 			"Unfold",
@@ -4255,41 +4293,6 @@
 			"Fold Level 3",
 			"Fold Level 4",
 			"Fold Level 5"
-		],
-		"vs/editor/contrib/indentation/common/indentation": [
-			"Configured Tab Size",
-			"Select Tab Size for Current File",
-			"Convert Indentation to Spaces",
-			"Convert Indentation to Tabs",
-			"Indent Using Spaces",
-			"Indent Using Tabs",
-			"Detect Indentation from Content",
-			"Toggle Render Whitespace",
-			"Toggle Control Characters"
-		],
-		"vs/platform/extensions/common/extensionsRegistry": [
-			"Got empty extension description",
-			"property `{0}` is mandatory and must be of type `string`",
-			"property `{0}` is mandatory and must be of type `string`",
-			"property `{0}` is mandatory and must be of type `string`",
-			"property `{0}` is mandatory and must be of type `object`",
-			"property `{0}` is mandatory and must be of type `string`",
-			"property `{0}` can be omitted or must be of type `string[]`",
-			"property `{0}` can be omitted or must be of type `string[]`",
-			"properties `{0}` and `{1}` must both be specified or must both be omitted",
-			"property `{0}` can be omitted or must be of type `string`",
-			"Expected `main` ({0}) to be included inside extension's folder ({1}). This might make the extension non-portable.",
-			"properties `{0}` and `{1}` must both be specified or must both be omitted",
-			"The display name for the extension used in the VS Code gallery.",
-			"The categories used by the VS Code gallery to categorize the extension.",
-			"Banner used in the VS Code marketplace.",
-			"The banner color on the VS Code marketplace page header.",
-			"The color theme for the font used in the banner.",
-			"The publisher of the VS Code extension.",
-			"Activation events for the VS Code extension.",
-			"Dependencies to other extensions. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.",
-			"Script executed before the package is published as a VS Code extension.",
-			"All contributions of the VS Code extension represented by this package."
 		],
 		"vs/languages/html/common/html.contribution": [
 			"HTML",
@@ -4340,11 +4343,6 @@
 			"Unfortunately we have no symbol information for the file",
 			"Open a text file first to go to a symbol"
 		],
-		"vs/workbench/parts/quickopen/browser/helpHandler": [
-			"{0}, picker help",
-			"global commands",
-			"editor commands"
-		],
 		"vs/workbench/parts/quickopen/browser/commandsHandler": [
 			"Show All Commands",
 			"{0}, {1}, commands",
@@ -4356,11 +4354,16 @@
 			"No commands matching",
 			"Show Editor Commands"
 		],
-		"vs/workbench/parts/files/browser/views/emptyView": [
-			"Files Explorer Section",
-			"No Folder Opened",
-			"You have not yet opened a folder.",
-			"Open Folder"
+		"vs/workbench/parts/quickopen/browser/helpHandler": [
+			"{0}, picker help",
+			"global commands",
+			"editor commands"
+		],
+		"vs/workbench/parts/files/browser/views/openEditorsView": [
+			"Open Editors Section",
+			"Open Editors",
+			"Open Editors",
+			"{0} unsaved"
 		],
 		"vs/workbench/parts/files/browser/views/explorerViewer": [
 			"Type file name. Press Enter to confirm or Escape to cancel.",
@@ -4370,15 +4373,15 @@
 			"This action is irreversible!",
 			"&&Replace"
 		],
-		"vs/workbench/parts/files/browser/views/openEditorsView": [
-			"Open Editors Section",
-			"Open Editors",
-			"Open Editors",
-			"{0} unsaved"
-		],
 		"vs/workbench/parts/files/browser/views/explorerView": [
 			"Files Explorer Section",
 			"Files Explorer"
+		],
+		"vs/workbench/parts/files/browser/views/emptyView": [
+			"Files Explorer Section",
+			"No Folder Opened",
+			"You have not yet opened a folder.",
+			"Open Folder"
 		],
 		"vs/base/browser/ui/actionbar/actionbar": [
 			"{0} ({1})"
@@ -4441,6 +4444,38 @@
 			"The name **{0}** is not valid as a file or folder name. Please choose a different name.",
 			"The name **{0}** results in a path that is too long. Please choose a shorter name."
 		],
+		"vs/platform/configuration/common/configurationRegistry": [
+			"Contributes configuration settings.",
+			"A summary of the settings. This label will be used in the settings file as separating comment.",
+			"Description of the configuration properties.",
+			"if set, 'configuration.type' must be set to 'object",
+			"'configuration.title' must be a string",
+			"'configuration.properties' must be an object"
+		],
+		"vs/workbench/parts/files/browser/fileTracker": [
+			"{0} unsaved files"
+		],
+		"vs/workbench/parts/files/browser/editors/textFileEditor": [
+			"Text File Editor",
+			"Create File",
+			"{0}. Text file editor.",
+			"Text file editor."
+		],
+		"vs/workbench/parts/files/browser/editors/binaryFileEditor": [
+			"Binary File Viewer"
+		],
+		"vs/workbench/parts/files/electron-browser/textFileServices": [
+			"Do you want to save the changes you made to {0}?",
+			"Do you want to save the changes to the following {0} files?",
+			"...1 additional file not shown",
+			"...{0} additional files not shown",
+			"&&Save All",
+			"&&Save",
+			"Do&&n't Save",
+			"Cancel",
+			"Your changes will be lost if you don't save them.",
+			"All Files"
+		],
 		"vs/workbench/parts/files/electron-browser/electronFileActions": [
 			"Reveal in Explorer",
 			"Reveal in Finder",
@@ -4457,38 +4492,6 @@
 			"Open...",
 			"Open Active File in New Window",
 			"Open a file first to open in new window"
-		],
-		"vs/workbench/parts/files/electron-browser/textFileServices": [
-			"Do you want to save the changes you made to {0}?",
-			"Do you want to save the changes to the following {0} files?",
-			"...1 additional file not shown",
-			"...{0} additional files not shown",
-			"&&Save All",
-			"&&Save",
-			"Do&&n't Save",
-			"Cancel",
-			"Your changes will be lost if you don't save them.",
-			"All Files"
-		],
-		"vs/platform/configuration/common/configurationRegistry": [
-			"Contributes configuration settings.",
-			"A summary of the settings. This label will be used in the settings file as separating comment.",
-			"Description of the configuration properties.",
-			"if set, 'configuration.type' must be set to 'object",
-			"'configuration.title' must be a string",
-			"'configuration.properties' must be an object"
-		],
-		"vs/workbench/parts/files/browser/fileTracker": [
-			"{0} unsaved files"
-		],
-		"vs/workbench/parts/files/browser/editors/binaryFileEditor": [
-			"Binary File Viewer"
-		],
-		"vs/workbench/parts/files/browser/editors/textFileEditor": [
-			"Text File Editor",
-			"Create File",
-			"{0}. Text file editor.",
-			"Text file editor."
 		],
 		"vs/workbench/browser/parts/editor/textDiffEditor": [
 			"Text Diff Editor",
@@ -4546,6 +4549,13 @@
 			"Current branch '{0}' is {1} commits behind and {2} commits ahead of '{3}'.",
 			"Undo Last Commit"
 		],
+		"vs/workbench/parts/debug/browser/debugEditorModelManager": [
+			"Breakpoint",
+			"Disabled Breakpoint",
+			"Unverified Breakpoint",
+			"Unverified breakpoint. File is modified, please restart debug session.",
+			"Conditional breakpoints not supported by this debug type"
+		],
 		"vs/workbench/parts/debug/browser/debugViews": [
 			"Variables Section",
 			"Variables",
@@ -4561,12 +4571,11 @@
 			"Breakpoints",
 			"Debug Breakpoints"
 		],
-		"vs/workbench/parts/debug/browser/debugEditorModelManager": [
-			"Breakpoint",
-			"Disabled Breakpoint",
-			"Unverified Breakpoint",
-			"Unverified breakpoint. File is modified, please restart debug session.",
-			"Conditional breakpoints not supported by this debug type"
+		"vs/workbench/parts/debug/browser/debugEditorContribution": [
+			"Add Breakpoint"
+		],
+		"vs/workbench/parts/html/browser/htmlPreviewPart": [
+			"Invalid editor input."
 		],
 		"vs/workbench/parts/debug/electron-browser/debugService": [
 			"Debugging started.",
@@ -4587,9 +4596,6 @@
 			"Source {0} is not available.",
 			"Debugging continued."
 		],
-		"vs/workbench/parts/debug/browser/debugEditorContribution": [
-			"Add Breakpoint"
-		],
 		"vs/workbench/parts/extensions/electron-browser/extensionTipsService": [
 			"It is recommended to install the '{0}' extension.",
 			"Don't show again",
@@ -4602,17 +4608,14 @@
 			"Extensions",
 			"{0} Outdated Extensions"
 		],
+		"vs/workbench/parts/emmet/node/actions/expandAbbreviation": [
+			"Emmet: Expand Abbreviation"
+		],
 		"vs/workbench/parts/extensions/electron-browser/extensionEditor": [
 			"License"
 		],
-		"vs/workbench/parts/html/browser/htmlPreviewPart": [
-			"Invalid editor input."
-		],
-		"vs/editor/common/modes/modesRegistry": [
-			"Plain Text"
-		],
-		"vs/workbench/parts/emmet/node/actions/expandAbbreviation": [
-			"Emmet: Expand Abbreviation"
+		"vs/workbench/parts/emmet/node/actions/matchingPair": [
+			"Emmet: Go to Matching Pair"
 		],
 		"vs/workbench/parts/emmet/node/actions/balance": [
 			"Emmet: Balance (inward)",
@@ -4623,12 +4626,13 @@
 			"Abbreviation",
 			"Emmet: Wrap with Abbreviation"
 		],
-		"vs/workbench/parts/emmet/node/actions/matchingPair": [
-			"Emmet: Go to Matching Pair"
-		],
 		"vs/workbench/parts/emmet/node/actions/editPoints": [
 			"Emmet: Previous Edit Point",
 			"Emmet: Next Edit Point"
+		],
+		"vs/workbench/parts/emmet/node/actions/selectItem": [
+			"Emmet: Select Previous Item",
+			"Emmet: Select Next Item"
 		],
 		"vs/workbench/parts/emmet/node/actions/splitJoinTag": [
 			"Emmet: Split/Join Tag"
@@ -4636,18 +4640,14 @@
 		"vs/workbench/parts/emmet/node/actions/toggleComment": [
 			"Emmet: Toggle Comment"
 		],
-		"vs/workbench/parts/emmet/node/actions/selectItem": [
-			"Emmet: Select Previous Item",
-			"Emmet: Select Next Item"
-		],
 		"vs/workbench/parts/emmet/node/actions/removeTag": [
 			"Emmet: Remove Tag"
 		],
-		"vs/workbench/parts/emmet/node/actions/mergeLines": [
-			"Emmet: Merge Lines"
-		],
 		"vs/workbench/parts/emmet/node/actions/updateImageSize": [
 			"Emmet: Update Image Size"
+		],
+		"vs/workbench/parts/emmet/node/actions/mergeLines": [
+			"Emmet: Merge Lines"
 		],
 		"vs/workbench/parts/emmet/node/actions/evaluateMath": [
 			"Emmet: Evaluate Math Expression"
@@ -4657,6 +4657,9 @@
 			"Tag",
 			"Emmet: Update Tag"
 		],
+		"vs/workbench/parts/emmet/node/actions/reflectCssValue": [
+			"Emmet: Reflect CSS Value"
+		],
 		"vs/workbench/parts/emmet/node/actions/incrementDecrement": [
 			"Emmet: Increment by 0.1",
 			"Emmet: Decrement by 0.1",
@@ -4665,16 +4668,12 @@
 			"Emmet: Increment by 10",
 			"Emmet: Decrement by 10"
 		],
-		"vs/workbench/parts/emmet/node/actions/reflectCssValue": [
-			"Emmet: Reflect CSS Value"
+		"vs/workbench/browser/parts/sidebar/sidebarPart": [
+			"Focus into Side Bar",
+			"View"
 		],
 		"vs/workbench/browser/parts/activitybar/activitybarPart": [
 			"Active View Switcher"
-		],
-		"vs/workbench/browser/parts/panel/panelPart": [
-			"Close",
-			"Toggle Panel Visibility",
-			"View"
 		],
 		"vs/workbench/services/history/browser/history": [
 			"[Extension Development Host] - {0}",
@@ -4690,8 +4689,9 @@
 			"Right",
 			"Unable to open '{0}': {1}."
 		],
-		"vs/workbench/browser/parts/sidebar/sidebarPart": [
-			"Focus into Side Bar",
+		"vs/workbench/browser/parts/panel/panelPart": [
+			"Close",
+			"Toggle Panel Visibility",
 			"View"
 		],
 		"vs/workbench/browser/parts/statusbar/statusbarPart": [
@@ -4739,6 +4739,12 @@
 			"Executes the build target",
 			"Example to run an arbitrary external command"
 		],
+		"vs/workbench/parts/tasks/browser/taskQuickOpen": [
+			"{0}, tasks",
+			"Type the name of a task to run",
+			"No tasks matching",
+			"No tasks found"
+		],
 		"vs/workbench/parts/tasks/node/processRunnerSystem": [
 			"No build task configured.",
 			"No test task configured.",
@@ -4759,12 +4765,6 @@
 			"Build task named '{0}' detected.",
 			"Test task named '{0}' detected."
 		],
-		"vs/workbench/parts/tasks/browser/taskQuickOpen": [
-			"{0}, tasks",
-			"Type the name of a task to run",
-			"No tasks matching",
-			"No tasks found"
-		],
 		"vs/workbench/electron-browser/update": [
 			"Update Now",
 			"Later",
@@ -4773,49 +4773,6 @@
 			"{0} will be updated after it restarts.",
 			"There is an available update.",
 			"There are no updates currently available."
-		],
-		"vs/workbench/api/node/mainThreadMessageService": [
-			"Close"
-		],
-		"vs/editor/node/textMate/TMSyntax": [
-			"Contributes textmate tokenizers.",
-			"Language identifier for which this syntax is contributed to.",
-			"Textmate scope name used by the tmLanguage file.",
-			"Path of the tmLanguage file. The path is relative to the extension folder and typically starts with './syntaxes/'.",
-			"List of language scope names to which this grammar is injected to.",
-			"Unknown language in `contributes.{0}.language`. Provided value: {1}",
-			"Expected string in `contributes.{0}.scopeName`. Provided value: {1}",
-			"Expected string in `contributes.{0}.path`. Provided value: {1}",
-			"Invalid value in `contributes.{0}.injectTo`. Must be an array of language scope names. Provided value: {1}",
-			"Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable."
-		],
-		"vs/platform/jsonschemas/common/jsonValidationExtensionPoint": [
-			"Contributes json schema configuration.",
-			"The file pattern to match, for example \"package.json\" or \"*.launch\".",
-			"A schema URL ('http:', 'https:') or relative path to the extension folder ('./').",
-			"'configuration.jsonValidation' must be a array",
-			"'configuration.jsonValidation.fileMatch' must be defined",
-			"'configuration.jsonValidation.url' must be a URL or relative path",
-			"'configuration.jsonValidation.url' is an invalid relative URL: {0}",
-			"'configuration.jsonValidation.url' must start with 'http:', 'https:' or './' to reference schemas located in the extension"
-		],
-		"vs/editor/node/textMate/TMSnippets": [
-			"Contributes TextMate snippets.",
-			"Language identifier for which this snippet is contributed to.",
-			"Path of the snippets file. The path is relative to the extension folder and typically starts with './snippets/'.",
-			"Unknown language in `contributes.{0}.language`. Provided value: {1}",
-			"Expected string in `contributes.{0}.path`. Provided value: {1}",
-			"Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable."
-		],
-		"vs/editor/common/model/textModelWithTokens": [
-			"The mode has failed while tokenizing the input."
-		],
-		"vs/editor/node/languageConfiguration": [
-			"Errors parsing {0}: {1}"
-		],
-		"vs/workbench/electron-browser/shell": [
-			"It is recommended not to run Code as 'root'.",
-			"The shared process terminated unexpectedly. Please reload the window to recover."
 		],
 		"vs/workbench/electron-browser/actions": [
 			"Close Editor",
@@ -4839,23 +4796,54 @@
 			"Close Notification Messages",
 			"{0} ⟷ {1}"
 		],
+		"vs/workbench/api/node/mainThreadMessageService": [
+			"Close"
+		],
+		"vs/editor/node/textMate/TMSnippets": [
+			"Contributes TextMate snippets.",
+			"Language identifier for which this snippet is contributed to.",
+			"Path of the snippets file. The path is relative to the extension folder and typically starts with './snippets/'.",
+			"Unknown language in `contributes.{0}.language`. Provided value: {1}",
+			"Expected string in `contributes.{0}.path`. Provided value: {1}",
+			"Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable."
+		],
+		"vs/editor/node/textMate/TMSyntax": [
+			"Contributes textmate tokenizers.",
+			"Language identifier for which this syntax is contributed to.",
+			"Textmate scope name used by the tmLanguage file.",
+			"Path of the tmLanguage file. The path is relative to the extension folder and typically starts with './syntaxes/'.",
+			"List of language scope names to which this grammar is injected to.",
+			"Unknown language in `contributes.{0}.language`. Provided value: {1}",
+			"Expected string in `contributes.{0}.scopeName`. Provided value: {1}",
+			"Expected string in `contributes.{0}.path`. Provided value: {1}",
+			"Invalid value in `contributes.{0}.injectTo`. Must be an array of language scope names. Provided value: {1}",
+			"Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable."
+		],
+		"vs/platform/jsonschemas/common/jsonValidationExtensionPoint": [
+			"Contributes json schema configuration.",
+			"The file pattern to match, for example \"package.json\" or \"*.launch\".",
+			"A schema URL ('http:', 'https:') or relative path to the extension folder ('./').",
+			"'configuration.jsonValidation' must be a array",
+			"'configuration.jsonValidation.fileMatch' must be defined",
+			"'configuration.jsonValidation.url' must be a URL or relative path",
+			"'configuration.jsonValidation.url' is an invalid relative URL: {0}",
+			"'configuration.jsonValidation.url' must start with 'http:', 'https:' or './' to reference schemas located in the extension"
+		],
+		"vs/editor/node/languageConfiguration": [
+			"Errors parsing {0}: {1}"
+		],
+		"vs/workbench/electron-browser/shell": [
+			"It is recommended not to run Code as 'root'.",
+			"The shared process terminated unexpectedly. Please reload the window to recover."
+		],
+		"vs/editor/common/model/textModelWithTokens": [
+			"The mode has failed while tokenizing the input."
+		],
 		"vs/base/parts/tree/browser/treeDefaults": [
 			"Collapse"
 		],
 		"vs/base/browser/ui/toolbar/toolbar": [
 			"More"
-		],
-		"vs/editor/contrib/find/common/findController": [
-			"Select All Occurences of Find Match",
-			"Change All Occurrences",
-			"Find",
-			"Find Next",
-			"Find Previous",
-			"Find Next Selection",
-			"Find Previous Selection",
-			"Replace",
-			"Move Last Selection To Next Find Match",
-			"Add Selection To Next Find Match"
 		],
 		"vs/workbench/parts/git/browser/gitWidgets": [
 			"Publish Branch",
@@ -4903,6 +4891,18 @@
 			"Staged Changes, Git",
 			"Changes, Git",
 			"Merge, Git"
+		],
+		"vs/editor/contrib/find/common/findController": [
+			"Select All Occurences of Find Match",
+			"Change All Occurrences",
+			"Find",
+			"Find Next",
+			"Find Previous",
+			"Find Next Selection",
+			"Find Previous Selection",
+			"Replace",
+			"Move Last Selection To Next Find Match",
+			"Add Selection To Next Find Match"
 		],
 		"vs/workbench/parts/debug/browser/breakpointWidget": [
 			"Breakpoint on line {0} will only stop if this condition is true. 'Enter' to accept, 'esc' to cancel.",
@@ -5009,11 +5009,11 @@
 			"Controls if the diff editor shows changes in leading or trailing whitespace as diffs",
 			"Controls if the Linux primary clipboard should be supported."
 		],
-		"vs/platform/actions/browser/menuItemActionItem": [
-			"{0} ({1})"
-		],
 		"vs/editor/common/config/defaultConfig": [
 			"Editor content"
+		],
+		"vs/platform/actions/browser/menuItemActionItem": [
+			"{0} ({1})"
 		],
 		"vs/editor/contrib/find/browser/findWidget": [
 			"Find",
@@ -5031,11 +5031,11 @@
 			"{0} of {1}",
 			"No results"
 		],
-		"vs/editor/contrib/referenceSearch/browser/referencesController": [
-			"Loading..."
-		],
 		"vs/editor/contrib/zoneWidget/browser/peekViewWidget": [
 			"Close"
+		],
+		"vs/editor/contrib/referenceSearch/browser/referencesController": [
+			"Loading..."
 		],
 		"vs/editor/contrib/hover/browser/modesContentHover": [
 			"Loading..."
@@ -5059,11 +5059,11 @@
 			"No results",
 			"References"
 		],
-		"vs/editor/contrib/rename/common/rename": [
-			"No result."
-		],
 		"vs/editor/common/services/bulkEdit": [
 			"These files have changed in the meantime: {0}"
+		],
+		"vs/editor/contrib/rename/common/rename": [
+			"No result."
 		],
 		"vs/editor/contrib/rename/browser/renameInputField": [
 			"Rename input. Type new name and press Enter to commit."
@@ -5078,6 +5078,15 @@
 			"{0}, accepted",
 			"{0}, suggestion, has details",
 			"{0}, suggestion"
+		],
+		"vs/workbench/parts/files/browser/views/openEditorsViewer": [
+			"{0}, Editor Group",
+			"{0}, Open Editor",
+			"Save All",
+			"Close All",
+			"Close",
+			"Close Others",
+			"Close All"
 		],
 		"vs/workbench/browser/parts/editor/editorActions": [
 			"Split Editor",
@@ -5121,21 +5130,6 @@
 			"Navigate Previous in Quick Open",
 			"Open Last Editor in Group"
 		],
-		"vs/workbench/parts/files/browser/views/openEditorsViewer": [
-			"{0}, Editor Group",
-			"{0}, Open Editor",
-			"Save All",
-			"Close All",
-			"Close",
-			"Close Others",
-			"Close All"
-		],
-		"vs/workbench/browser/parts/editor/binaryEditor": [
-			"Binary Viewer"
-		],
-		"vs/workbench/parts/search/browser/replaceService": [
-			"{0} ↔ {1} (Replace Preview)"
-		],
 		"vs/workbench/parts/files/browser/saveErrorHandler": [
 			"Overwrite",
 			"Retry",
@@ -5150,6 +5144,12 @@
 			"Overwrite",
 			"The content of the file on disk has changed and the left hand side of the compare editor was refreshed. Please review and resolve again.",
 			"Revert"
+		],
+		"vs/workbench/parts/search/browser/replaceService": [
+			"{0} ↔ {1} (Replace Preview)"
+		],
+		"vs/workbench/browser/parts/editor/binaryEditor": [
+			"Binary Viewer"
 		],
 		"vs/workbench/parts/git/browser/gitServices": [
 			"Can't open this git resource.",
@@ -5176,6 +5176,9 @@
 			"{0} - Changes on {1}",
 			"Can't open this git resource."
 		],
+		"vs/workbench/parts/debug/browser/debugHover": [
+			"Debug Hover"
+		],
 		"vs/workbench/parts/debug/node/rawDebugSession": [
 			"More Info",
 			"No extension installed for '{0}' debugging.",
@@ -5183,13 +5186,6 @@
 			"Debug adapter executable '{0}' not found.",
 			"{0}. Stopping the debug adapter.",
 			"Debug adapter process has terminated unexpectedly"
-		],
-		"vs/workbench/services/thread/electron-browser/threadService": [
-			"Extension host did not start in 10 seconds, it might be stopped on the first line and needs a debugger to continue.",
-			"Extension host did not start in 10 seconds, that might be a problem.",
-			"Error from the extension host: {0}",
-			"Extension host terminated unexpectedly. Please reload the window to recover.",
-			"Reload Window"
 		],
 		"vs/workbench/parts/debug/node/debugConfigurationManager": [
 			"Contributes debug adapters.",
@@ -5219,15 +5215,19 @@
 			"Unable to create 'launch.json' file inside the '.vscode' folder ({0}).",
 			"Select Environment"
 		],
-		"vs/workbench/parts/debug/browser/debugHover": [
-			"Debug Hover"
-		],
-		"vs/workbench/browser/parts/activitybar/activityAction": [
-			"{0} ({1})"
+		"vs/workbench/services/thread/electron-browser/threadService": [
+			"Extension host did not start in 10 seconds, it might be stopped on the first line and needs a debugger to continue.",
+			"Extension host did not start in 10 seconds, that might be a problem.",
+			"Error from the extension host: {0}",
+			"Extension host terminated unexpectedly. Please reload the window to recover.",
+			"Reload Window"
 		],
 		"vs/workbench/browser/parts/compositePart": [
 			"{0} ({1})",
 			"{0} actions"
+		],
+		"vs/workbench/browser/parts/activitybar/activityAction": [
+			"{0} ({1})"
 		],
 		"vs/workbench/browser/parts/editor/editor.contribution": [
 			"Text Editor",
@@ -5250,11 +5250,6 @@
 			"Quick picker. Type to narrow down results.",
 			"Quick Picker"
 		],
-		"vs/platform/keybinding/browser/keybindingServiceImpl": [
-			"Here are other available commands: ",
-			"({0}) was pressed. Waiting for second key of chord...",
-			"The key combination ({0}, {1}) is not a command."
-		],
 		"vs/base/browser/ui/messagelist/messageList": [
 			"Error: {0}",
 			"Warning: {0}",
@@ -5263,6 +5258,11 @@
 			"Warn",
 			"Info",
 			"Close"
+		],
+		"vs/platform/keybinding/browser/keybindingServiceImpl": [
+			"Here are other available commands: ",
+			"({0}) was pressed. Waiting for second key of chord...",
+			"The key combination ({0}, {1}) is not a command."
 		],
 		"vs/workbench/parts/tasks/node/processRunnerConfiguration": [
 			"Error: no valid command name provided.",
@@ -5279,10 +5279,6 @@
 			"Warning: isShellCommand must be of type boolean. Ignoring value {0}.",
 			"Warning: args must be of type string[]. Ignoring value {0}.",
 			"Warning: options.cwd must be of type string. Ignoring value {0}."
-		],
-		"vs/workbench/services/message/electron-browser/messageService": [
-			"&&Yes",
-			"Cancel"
 		],
 		"vs/workbench/parts/feedback/browser/feedback": [
 			"Tweet Feedback",
@@ -5302,12 +5298,6 @@
 			"Thanks",
 			"Try again"
 		],
-		"vs/workbench/services/request/node/requestService": [
-			"File not found.",
-			"HTTP",
-			"The proxy setting to use. If not set will be taken from the http_proxy and https_proxy environment variables",
-			"Whether the proxy server certificate should be verified against the list of supplied CAs."
-		],
 		"vs/workbench/electron-browser/integration": [
 			"Undo",
 			"Redo",
@@ -5316,13 +5306,26 @@
 			"Paste",
 			"Select All"
 		],
+		"vs/workbench/services/message/electron-browser/messageService": [
+			"&&Yes",
+			"Cancel"
+		],
+		"vs/workbench/services/request/node/requestService": [
+			"File not found.",
+			"HTTP",
+			"The proxy setting to use. If not set will be taken from the http_proxy and https_proxy environment variables",
+			"Whether the proxy server certificate should be verified against the list of supplied CAs."
+		],
+		"vs/editor/common/services/modelServiceImpl": [
+			"Please update your settings: `editor.detectIndentation` replaces `editor.tabSize`: \"auto\" or `editor.insertSpaces`: \"auto\""
+		],
 		"vs/workbench/services/files/electron-browser/fileService": [
 			"The Microsoft .NET Framework 4.5 is required. Please follow the link to install it.",
 			"Download .NET Framework 4.5",
 			"Failed to move '{0}' to the trash"
 		],
-		"vs/editor/common/services/modelServiceImpl": [
-			"Please update your settings: `editor.detectIndentation` replaces `editor.tabSize`: \"auto\" or `editor.insertSpaces`: \"auto\""
+		"vs/workbench/electron-browser/crashReporter": [
+			"Enable crash reports to be sent to Microsoft.\n\t// This option requires restart to take effect."
 		],
 		"vs/workbench/services/themes/electron-browser/themeService": [
 			"Contributes textmate color themes.",
@@ -5335,9 +5338,6 @@
 			"Unable to load {0}",
 			"Problems parsing JSON theme file: {0}",
 			"Problems parsing plist file: {0}"
-		],
-		"vs/workbench/electron-browser/crashReporter": [
-			"Enable crash reports to be sent to Microsoft.\n\t// This option requires restart to take effect."
 		],
 		"vs/editor/common/controller/cursor": [
 			"Unexpected exception while executing command."
