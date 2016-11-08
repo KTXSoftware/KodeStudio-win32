@@ -34,5 +34,5 @@ exports.endsWith = endsWith;
 function convertSimple2RegExpPattern(pattern) {
     return pattern.replace(/[\-\\\{\}\+\?\|\^\$\.\,\[\]\(\)\#\s]/g, '\\$&').replace(/[\*]/g, '.*');
 }
-exports.convertSimple2RegExpPattern = convertSimple2RegExpPattern;
-//# sourceMappingURL=strings.js.map
+exports.convertSimple2RegExpPattern = convertSimple2RegExpPattern;
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/90961d9c9e250262a6c80cc1f9b9928b265aa64e/extensions\json\server\out/utils\strings.js.map

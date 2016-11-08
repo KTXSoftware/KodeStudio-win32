@@ -14,5 +14,5 @@ function activate(context) {
         ]
     });
 }
-exports.activate = activate;
-//# sourceMappingURL=pythonMain.js.map
+exports.activate = activate;
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/90961d9c9e250262a6c80cc1f9b9928b265aa64e/extensions\python\out/pythonMain.js.map

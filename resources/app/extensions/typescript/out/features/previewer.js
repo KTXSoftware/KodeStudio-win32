@@ -9,5 +9,5 @@ function plain(parts) {
     }
     return parts.map(function (part) { return part.text; }).join('');
 }
-exports.plain = plain;
-//# sourceMappingURL=previewer.js.map
+exports.plain = plain;
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/90961d9c9e250262a6c80cc1f9b9928b265aa64e/extensions\typescript\out/features\previewer.js.map
