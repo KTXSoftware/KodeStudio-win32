@@ -5,6 +5,7 @@
 const vscode_chrome_debug_core_1 = require('vscode-chrome-debug-core');
 const child_process_1 = require('child_process');
 const utils = require('./utils');
+const os = require('os');
 const path = require('path');
 const DefaultWebSourceMapPathOverrides = {
     'webpack:///./*': '${webRoot}/*',
@@ -12,10 +13,26 @@ const DefaultWebSourceMapPathOverrides = {
     'meteor://💻app/*': '${webRoot}/*',
 };
 function osDir() {
-    return 'win32';
+    if (os.platform() === 'darwin') {
+        return path.join('macos', 'Krom.app', 'Contents', 'MacOS');
+    }
+    else if (os.platform() === 'win32') {
+        return 'win32';
+    }
+    else {
+        return 'linux';
+    }
 }
 function osExt() {
-    return '.exe';
+    if (os.platform() === 'darwin') {
+        return '';
+    }
+    else if (os.platform() === 'win32') {
+        return '.exe';
+    }
+    else {
+        return '';
+    }
 }
 class ChromeDebugAdapter extends vscode_chrome_debug_core_1.ChromeDebugAdapter {
     initialize(args) {
@@ -23,6 +40,7 @@ class ChromeDebugAdapter extends vscode_chrome_debug_core_1.ChromeDebugAdapter {
         return super.initialize(args);
     }
     launch(args) {
+        this._kha = args.kha;
         args.sourceMapPathOverrides = getSourceMapPathOverrides(args.webRoot, args.sourceMapPathOverrides);
         return super.launch(args).then(() => {
             vscode_chrome_debug_core_1.logger.log('Using Kha from ' + args.kha + '\n', true);
@@ -93,7 +111,9 @@ class ChromeDebugAdapter extends vscode_chrome_debug_core_1.ChromeDebugAdapter {
                 return this.doAttach(port, 'http://krom', args.address);
             }, (reason) => {
                 vscode_chrome_debug_core_1.logger.error('Launch canceled.', true);
-                return new Promise((resolve) => {
+                require(path.join(this._kha, 'Tools/khamake/out/main.js')).close();
+                return new Promise((resolve, reject) => {
+                    reject({ id: Math.floor(Math.random() * 100000), format: 'Compilation failed.' });
                 });
             });
         });
@@ -105,7 +125,12 @@ class ChromeDebugAdapter extends vscode_chrome_debug_core_1.ChromeDebugAdapter {
     doAttach(port, targetUrl, address, timeout) {
         return super.doAttach(port, targetUrl, address, timeout).then(() => {
             // this.runScript();
+            this.chrome.Log.onEntryAdded(params => this.onEntryAdded(params));
+            // this.chrome.Log.enable();
         });
+    }
+    onEntryAdded(event) {
+        vscode_chrome_debug_core_1.logger.log(event.entry.text, true);
     }
     onPaused(notification) {
         this._overlayHelper.doAndCancel(() => this.chrome.Page.configureOverlay({ message: ChromeDebugAdapter.PAGE_PAUSE_MESSAGE }).catch(() => { }));
@@ -120,6 +145,7 @@ class ChromeDebugAdapter extends vscode_chrome_debug_core_1.ChromeDebugAdapter {
             this._chromeProc.kill('SIGINT');
             this._chromeProc = null;
         }
+        require(path.join(this._kha, 'Tools/khamake/out/main.js')).close();
         return super.disconnect();
     }
     runScript() {
@@ -159,4 +185,4 @@ function resolveWebRootPattern(webRoot, sourceMapPathOverrides, warnOnMissing) {
     return resolvedOverrides;
 }
 exports.resolveWebRootPattern = resolveWebRootPattern;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/90961d9c9e250262a6c80cc1f9b9928b265aa64e/extensions\krom-debug\out/chromeDebugAdapter.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/ff8f66382ad001a1938d7dbceada9ec9a6ab9411/extensions\krom-debug\out/chromeDebugAdapter.js.map

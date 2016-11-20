@@ -47,4 +47,4 @@ function exportPng(to, width, height, background, from) {
     run(findIcon(from.toString()), to.toString(), width, height, 'png', background, function () { });
 }
 exports.exportPng = exportPng;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/90961d9c9e250262a6c80cc1f9b9928b265aa64e/extensions\kha\Kha\Kore\Tools\koremake\out/Icon.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/ff8f66382ad001a1938d7dbceada9ec9a6ab9411/extensions\kha\Kha\Kore\Tools\koremake\out/Icon.js.map

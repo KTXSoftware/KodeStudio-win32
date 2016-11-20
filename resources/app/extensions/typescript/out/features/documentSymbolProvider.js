@@ -94,4 +94,4 @@ var TypeScriptDocumentSymbolProvider = (function () {
 }());
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = TypeScriptDocumentSymbolProvider;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/90961d9c9e250262a6c80cc1f9b9928b265aa64e/extensions\typescript\out/features\documentSymbolProvider.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/ff8f66382ad001a1938d7dbceada9ec9a6ab9411/extensions\typescript\out/features\documentSymbolProvider.js.map
