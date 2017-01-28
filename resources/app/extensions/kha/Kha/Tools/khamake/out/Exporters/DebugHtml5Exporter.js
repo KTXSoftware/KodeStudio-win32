@@ -4,9 +4,6 @@ class DebugHtml5Exporter extends Html5Exporter_1.Html5Exporter {
     constructor(options) {
         super(options);
     }
-    sysdir() {
-        return 'debug-html5';
-    }
 }
 exports.DebugHtml5Exporter = DebugHtml5Exporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/ff8f66382ad001a1938d7dbceada9ec9a6ab9411/extensions\kha\Kha\Tools\khamake\out/Exporters\DebugHtml5Exporter.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/ebff2335d0f58a5b01ac50cb66737f4694ec73f3/extensions\kha\Kha\Tools\khamake\out/Exporters\DebugHtml5Exporter.js.map

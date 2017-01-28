@@ -26,9 +26,6 @@ class FlashExporter extends KhaExporter_1.KhaExporter {
         this.blobs = [];
         this.addSourceDirectory(path.join(options.kha, 'Backends', 'Flash'));
     }
-    sysdir() {
-        return 'flash';
-    }
     haxeOptions(name, targetOptions, defines) {
         defines.push('swf-script-timeout=60');
         defines.push('sys_' + this.options.target);
@@ -143,4 +140,4 @@ class FlashExporter extends KhaExporter_1.KhaExporter {
     }
 }
 exports.FlashExporter = FlashExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/ff8f66382ad001a1938d7dbceada9ec9a6ab9411/extensions\kha\Kha\Tools\khamake\out/Exporters\FlashExporter.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/ebff2335d0f58a5b01ac50cb66737f4694ec73f3/extensions\kha\Kha\Tools\khamake\out/Exporters\FlashExporter.js.map

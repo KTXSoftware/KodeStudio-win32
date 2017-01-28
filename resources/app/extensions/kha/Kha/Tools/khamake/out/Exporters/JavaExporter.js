@@ -17,9 +17,6 @@ class JavaExporter extends KhaExporter_1.KhaExporter {
         this.addSourceDirectory(path.join(this.options.kha, 'Backends', this.backend()));
         fs.removeSync(path.join(this.options.to, this.sysdir(), 'Sources'));
     }
-    sysdir() {
-        return 'java';
-    }
     haxeOptions(name, targetOptions, defines) {
         defines.push('no-compilation');
         defines.push('sys_' + this.options.target);
@@ -108,4 +105,4 @@ class JavaExporter extends KhaExporter_1.KhaExporter {
     }
 }
 exports.JavaExporter = JavaExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/ff8f66382ad001a1938d7dbceada9ec9a6ab9411/extensions\kha\Kha\Tools\khamake\out/Exporters\JavaExporter.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/ebff2335d0f58a5b01ac50cb66737f4694ec73f3/extensions\kha\Kha\Tools\khamake\out/Exporters\JavaExporter.js.map
