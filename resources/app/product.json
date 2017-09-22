@@ -15,7 +15,7 @@
 	"darwinBundleIdentifier": "org.kodestudio",
 	"reportIssueUrl": "https://github.com/Kode/KodeStudio/issues/new",
 	"urlProtocol": "code-oss",
-	"kodeStudioVersion": "17.8.0",
+	"kodeStudioVersion": "17.9.0",
 	"commit": "3176c3de349aff5ca5407ebef0ae77aed5806604",
 	"date": "2017-09-22T17:26:41.813Z",
 	"checksums": {
