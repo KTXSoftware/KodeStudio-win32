@@ -1,8 +1,9 @@
+"use strict";
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
-"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.globalfunctions = {
     password_get_info: {
         description: 'Returns information about the given hash. (5.5 only)',
@@ -5697,4 +5698,4 @@ exports.keywords = {
     while: {},
     xor: {},
 };
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/ebff2335d0f58a5b01ac50cb66737f4694ec73f3/extensions\php\out/features\phpGlobals.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\php\out/features\phpGlobals.js.map

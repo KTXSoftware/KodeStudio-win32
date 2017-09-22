@@ -3,9 +3,10 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 'use strict';
-var languageModelCache_1 = require('../languageModelCache');
-var vscode_css_languageservice_1 = require('vscode-css-languageservice');
-var embeddedSupport_1 = require('./embeddedSupport');
+Object.defineProperty(exports, "__esModule", { value: true });
+var languageModelCache_1 = require("../languageModelCache");
+var vscode_css_languageservice_1 = require("vscode-css-languageservice");
+var embeddedSupport_1 = require("./embeddedSupport");
 function getCSSMode(documentRegions) {
     var cssLanguageService = vscode_css_languageservice_1.getCSSLanguageService();
     var embeddedCSSDocuments = languageModelCache_1.getLanguageModelCache(10, 60, function (document) { return documentRegions.get(document).getEmbeddedDocument('css'); });
@@ -61,4 +62,4 @@ function getCSSMode(documentRegions) {
 }
 exports.getCSSMode = getCSSMode;
 ;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/ebff2335d0f58a5b01ac50cb66737f4694ec73f3/extensions\html\server\out/modes\cssMode.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\html\server\out/modes\cssMode.js.map

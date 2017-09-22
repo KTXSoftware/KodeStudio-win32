@@ -10,7 +10,7 @@
   "engines": {
     "vscode": "^0.10.1"
   },
-  "icon": "images/mock-debug-icon.svg",
+  "icon": "images/mock-debug-icon.png",
   "categories": [
     "Debuggers"
   ],
