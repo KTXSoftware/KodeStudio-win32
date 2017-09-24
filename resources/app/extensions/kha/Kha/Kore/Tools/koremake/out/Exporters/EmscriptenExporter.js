@@ -142,5 +142,5 @@ class EmscriptenExporter extends Exporter_1.Exporter {
         link(objectFiles, to.resolve(Paths.get("build", "Kt.js").toString()));*/
     }
 }
-exports.EmscriptenExporter = EmscriptenExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Kore\Tools\koremake\out/Exporters\EmscriptenExporter.js.map
+exports.EmscriptenExporter = EmscriptenExporter;
+//# sourceMappingURL=EmscriptenExporter.js.map

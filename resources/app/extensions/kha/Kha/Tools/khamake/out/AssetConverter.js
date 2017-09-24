@@ -159,5 +159,5 @@ class AssetConverter {
         });
     }
 }
-exports.AssetConverter = AssetConverter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/AssetConverter.js.map
+exports.AssetConverter = AssetConverter;
+//# sourceMappingURL=AssetConverter.js.map

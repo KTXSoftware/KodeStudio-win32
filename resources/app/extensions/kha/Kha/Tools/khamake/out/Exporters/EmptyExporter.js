@@ -86,5 +86,5 @@ class EmptyExporter extends KhaExporter_1.KhaExporter {
         });
     }
 }
-exports.EmptyExporter = EmptyExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/Exporters\EmptyExporter.js.map
+exports.EmptyExporter = EmptyExporter;
+//# sourceMappingURL=EmptyExporter.js.map

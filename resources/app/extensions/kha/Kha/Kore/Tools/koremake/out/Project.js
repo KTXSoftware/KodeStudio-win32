@@ -369,5 +369,5 @@ class Project {
         this.cmd = true;
     }
 }
-exports.Project = Project;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Kore\Tools\koremake\out/Project.js.map
+exports.Project = Project;
+//# sourceMappingURL=Project.js.map

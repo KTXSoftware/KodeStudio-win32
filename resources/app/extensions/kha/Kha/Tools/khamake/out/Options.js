@@ -2,5 +2,5 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 class Options {
 }
-exports.Options = Options;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/Options.js.map
+exports.Options = Options;
+//# sourceMappingURL=Options.js.map

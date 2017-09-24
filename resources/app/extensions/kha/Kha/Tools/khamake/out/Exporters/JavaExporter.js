@@ -113,5 +113,5 @@ class JavaExporter extends KhaExporter_1.KhaExporter {
         });
     }
 }
-exports.JavaExporter = JavaExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/Exporters\JavaExporter.js.map
+exports.JavaExporter = JavaExporter;
+//# sourceMappingURL=JavaExporter.js.map

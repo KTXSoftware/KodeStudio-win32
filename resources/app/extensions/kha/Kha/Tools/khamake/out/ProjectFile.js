@@ -54,5 +54,5 @@ function loadProject(from, projectfile, platform) {
         });
     });
 }
-exports.loadProject = loadProject;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/ProjectFile.js.map
+exports.loadProject = loadProject;
+//# sourceMappingURL=ProjectFile.js.map

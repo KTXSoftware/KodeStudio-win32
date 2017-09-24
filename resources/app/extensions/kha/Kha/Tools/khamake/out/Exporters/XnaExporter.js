@@ -256,5 +256,5 @@ class XnaExporter extends CSharpExporter_1.CSharpExporter {
         });
     }
 }
-exports.XnaExporter = XnaExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/Exporters\XnaExporter.js.map
+exports.XnaExporter = XnaExporter;
+//# sourceMappingURL=XnaExporter.js.map

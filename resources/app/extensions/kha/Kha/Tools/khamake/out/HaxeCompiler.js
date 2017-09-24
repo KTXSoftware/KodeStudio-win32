@@ -179,5 +179,5 @@ class HaxeCompiler {
         }
     }
 }
-exports.HaxeCompiler = HaxeCompiler;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/HaxeCompiler.js.map
+exports.HaxeCompiler = HaxeCompiler;
+//# sourceMappingURL=HaxeCompiler.js.map

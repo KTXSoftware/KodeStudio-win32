@@ -9,5 +9,5 @@ class NodeExporter extends Html5Exporter_1.Html5Exporter {
         return 'Node';
     }
 }
-exports.NodeExporter = NodeExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/Exporters\NodeExporter.js.map
+exports.NodeExporter = NodeExporter;
+//# sourceMappingURL=NodeExporter.js.map

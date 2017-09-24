@@ -11,5 +11,5 @@ exports.Options = {
     visualStudioVersion: VisualStudioVersion_1.VisualStudioVersion.VS2017,
     compile: false,
     run: false
-};
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Kore\Tools\koremake\out/Options.js.map
+};
+//# sourceMappingURL=Options.js.map

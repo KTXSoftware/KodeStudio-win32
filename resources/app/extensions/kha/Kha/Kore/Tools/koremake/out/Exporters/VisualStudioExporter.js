@@ -938,5 +938,5 @@ class VisualStudioExporter extends Exporter_1.Exporter {
         }
     }
 }
-exports.VisualStudioExporter = VisualStudioExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Kore\Tools\koremake\out/Exporters\VisualStudioExporter.js.map
+exports.VisualStudioExporter = VisualStudioExporter;
+//# sourceMappingURL=VisualStudioExporter.js.map

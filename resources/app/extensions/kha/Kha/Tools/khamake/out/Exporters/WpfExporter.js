@@ -284,5 +284,5 @@ class WpfExporter extends CSharpExporter_1.CSharpExporter {
         });
     }
 }
-exports.WpfExporter = WpfExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/Exporters\WpfExporter.js.map
+exports.WpfExporter = WpfExporter;
+//# sourceMappingURL=WpfExporter.js.map

@@ -33,5 +33,5 @@ class Block {
         fs.writeSync(this.out, data, 0, data.length, null);
     }
 }
-exports.Block = Block;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Kore\Tools\koremake\out/Block.js.map
+exports.Block = Block;
+//# sourceMappingURL=Block.js.map

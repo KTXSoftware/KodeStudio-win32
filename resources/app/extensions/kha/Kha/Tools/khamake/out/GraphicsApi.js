@@ -7,5 +7,5 @@ exports.GraphicsApi = {
     Direct3D12: 'direct3d12',
     Metal: 'metal',
     Vulkan: 'vulkan'
-};
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/GraphicsApi.js.map
+};
+//# sourceMappingURL=GraphicsApi.js.map

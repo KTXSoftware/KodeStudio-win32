@@ -751,5 +751,5 @@ class XCodeExporter extends Exporter_1.Exporter {
         this.closeFile();
     }
 }
-exports.XCodeExporter = XCodeExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Kore\Tools\koremake\out/Exporters\XCodeExporter.js.map
+exports.XCodeExporter = XCodeExporter;
+//# sourceMappingURL=XCodeExporter.js.map

@@ -6,5 +6,5 @@ class DebugHtml5Exporter extends Html5Exporter_1.Html5Exporter {
         super(options);
     }
 }
-exports.DebugHtml5Exporter = DebugHtml5Exporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/Exporters\DebugHtml5Exporter.js.map
+exports.DebugHtml5Exporter = DebugHtml5Exporter;
+//# sourceMappingURL=DebugHtml5Exporter.js.map

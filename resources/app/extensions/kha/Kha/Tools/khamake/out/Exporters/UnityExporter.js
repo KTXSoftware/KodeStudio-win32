@@ -97,5 +97,5 @@ class UnityExporter extends KhaExporter_1.KhaExporter {
         });
     }
 }
-exports.UnityExporter = UnityExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/Exporters\UnityExporter.js.map
+exports.UnityExporter = UnityExporter;
+//# sourceMappingURL=UnityExporter.js.map

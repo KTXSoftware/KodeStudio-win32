@@ -206,5 +206,5 @@ class Html5Exporter extends KhaExporter_1.KhaExporter {
         });
     }
 }
-exports.Html5Exporter = Html5Exporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/Exporters\Html5Exporter.js.map
+exports.Html5Exporter = Html5Exporter;
+//# sourceMappingURL=Html5Exporter.js.map

@@ -118,5 +118,5 @@ class CSharpExporter extends KhaExporter_1.KhaExporter {
         });
     }
 }
-exports.CSharpExporter = CSharpExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/Exporters\CSharpExporter.js.map
+exports.CSharpExporter = CSharpExporter;
+//# sourceMappingURL=CSharpExporter.js.map

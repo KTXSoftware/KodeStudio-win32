@@ -91,5 +91,5 @@ class KromExporter extends KhaExporter_1.KhaExporter {
         });
     }
 }
-exports.KromExporter = KromExporter;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\kha\Kha\Tools\khamake\out/Exporters\KromExporter.js.map
+exports.KromExporter = KromExporter;
+//# sourceMappingURL=KromExporter.js.map
