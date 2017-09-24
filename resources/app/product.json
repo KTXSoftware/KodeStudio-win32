@@ -15,5 +15,14 @@
 	"darwinBundleIdentifier": "org.kodestudio",
 	"reportIssueUrl": "https://github.com/Kode/KodeStudio/issues/new",
 	"urlProtocol": "code-oss",
-	"kodeStudioVersion": "17.9.1"
+	"kodeStudioVersion": "17.9.1",
+	"commit": "3176c3de349aff5ca5407ebef0ae77aed5806604",
+	"date": "2017-09-22T17:26:41.813Z",
+	"checksums": {
+		"vs/workbench/workbench.main.js": "wtMXjLS75OleBkLgkCpGRQ",
+		"vs/workbench/workbench.main.css": "Fy/zoAuF09bK/FqAHcgh9g",
+		"vs/workbench/electron-browser/bootstrap/index.html": "Rbr+xqmaFODIjpdAuL4sFA",
+		"vs/workbench/electron-browser/bootstrap/index.js": "NVMFZPCPWkIYOejMsPdqNg",
+		"vs/workbench/electron-browser/bootstrap/preload.js": "Iz0OQT3IJpYCbJsAQ/heNw"
+	}
 }
