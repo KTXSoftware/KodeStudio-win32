@@ -1,12 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-const interfaces = require("./interfaces");
 class DocumentMergeConflict {
-    constructor(document, descriptor) {
+    constructor(descriptor) {
         this.range = descriptor.range;
         this.current = descriptor.current;
         this.incoming = descriptor.incoming;
@@ -18,7 +13,6 @@ class DocumentMergeConflict {
             this.applyEdit(type, editor, edit);
             return Promise.resolve(true);
         }
-        ;
         return editor.edit((edit) => this.applyEdit(type, editor, edit));
     }
     applyEdit(type, editor, edit) {
@@ -31,16 +25,16 @@ class DocumentMergeConflict {
         //   [ Incoming Content ]       -- (content)
         //   [ Incoming Header ]\n      -- <<<<< Incoming
         // ]
-        if (type === interfaces.CommitType.Current) {
+        if (type === 0 /* Current */) {
             // Replace [ Conflict Range ] with [ Current Content ]
             let content = editor.document.getText(this.current.content);
             this.replaceRangeWithContent(content, edit);
         }
-        else if (type === interfaces.CommitType.Incoming) {
+        else if (type === 1 /* Incoming */) {
             let content = editor.document.getText(this.incoming.content);
             this.replaceRangeWithContent(content, edit);
         }
-        else if (type === interfaces.CommitType.Both) {
+        else if (type === 2 /* Both */) {
             // Replace [ Conflict Range ] with [ Current Content ] + \n + [ Incoming Content ]
             const currentContent = editor.document.getText(this.current.content);
             const incomingContent = editor.document.getText(this.incoming.content);
@@ -60,4 +54,4 @@ class DocumentMergeConflict {
     }
 }
 exports.DocumentMergeConflict = DocumentMergeConflict;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\merge-conflict\out/documentMergeConflict.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/abd89d197fd1913e759bdec423747c2f1d793e94/extensions\merge-conflict\out/documentMergeConflict.js.map

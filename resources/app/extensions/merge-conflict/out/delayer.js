@@ -31,7 +31,7 @@ class Delayer {
         if (delay >= 0 || this.timeout === null) {
             this.timeout = setTimeout(() => {
                 this.timeout = null;
-                this.onSuccess(null);
+                this.onSuccess(undefined);
             }, delay >= 0 ? delay : this.defaultDelay);
         }
         return this.completionPromise;
@@ -42,7 +42,7 @@ class Delayer {
         }
         this.cancelTimeout();
         let result = this.completionPromise;
-        this.onSuccess(null);
+        this.onSuccess(undefined);
         return result;
     }
     isTriggered() {
@@ -60,4 +60,4 @@ class Delayer {
     }
 }
 exports.Delayer = Delayer;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\merge-conflict\out/delayer.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/abd89d197fd1913e759bdec423747c2f1d793e94/extensions\merge-conflict\out/delayer.js.map

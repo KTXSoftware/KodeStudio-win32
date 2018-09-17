@@ -16,8 +16,7 @@ const vscode = require("vscode");
 const vscode_nls_1 = require("vscode-nls");
 const localize = vscode_nls_1.loadMessageBundle(__filename);
 class MergeConflictCodeLensProvider {
-    constructor(context, trackerService) {
-        this.context = context;
+    constructor(trackerService) {
         this.tracker = trackerService.createTracker('codelens');
     }
     begin(config) {
@@ -42,7 +41,7 @@ class MergeConflictCodeLensProvider {
             this.codeLensRegistrationHandle = null;
         }
     }
-    provideCodeLenses(document, token) {
+    provideCodeLenses(document, _token) {
         return __awaiter(this, void 0, void 0, function* () {
             if (!this.config || !this.config.enableCodeLens) {
                 return null;
@@ -79,8 +78,11 @@ class MergeConflictCodeLensProvider {
         });
     }
     registerCodeLensProvider() {
-        this.codeLensRegistrationHandle = vscode.languages.registerCodeLensProvider({ pattern: '**/*' }, this);
+        this.codeLensRegistrationHandle = vscode.languages.registerCodeLensProvider([
+            { scheme: 'file' },
+            { scheme: 'untitled' },
+        ], this);
     }
 }
 exports.default = MergeConflictCodeLensProvider;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\merge-conflict\out/codelensProvider.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/abd89d197fd1913e759bdec423747c2f1d793e94/extensions\merge-conflict\out/codelensProvider.js.map

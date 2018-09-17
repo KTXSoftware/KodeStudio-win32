@@ -19,7 +19,7 @@ class ServiceWrapper {
     begin() {
         let configuration = this.createExtensionConfiguration();
         const documentTracker = new documentTracker_1.default();
-        this.services.push(documentTracker, new commandHandler_1.default(this.context, documentTracker), new codelensProvider_1.default(this.context, documentTracker), new contentProvider_1.default(this.context), new mergeDecorator_1.default(this.context, documentTracker));
+        this.services.push(documentTracker, new commandHandler_1.default(documentTracker), new codelensProvider_1.default(documentTracker), new contentProvider_1.default(this.context), new mergeDecorator_1.default(this.context, documentTracker));
         this.services.forEach((service) => {
             if (service.begin && service.begin instanceof Function) {
                 service.begin(configuration);
@@ -49,4 +49,4 @@ class ServiceWrapper {
     }
 }
 exports.default = ServiceWrapper;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\merge-conflict\out/services.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/abd89d197fd1913e759bdec423747c2f1d793e94/extensions\merge-conflict\out/services.js.map

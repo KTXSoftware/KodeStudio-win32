@@ -4,8 +4,6 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 Object.defineProperty(exports, "__esModule", { value: true });
-const nls = require("vscode-nls");
-nls.config(process.env.VSCODE_NLS_CONFIG)(__filename);
 const services_1 = require("./services");
 function activate(context) {
     // Register disposables
@@ -17,4 +15,4 @@ exports.activate = activate;
 function deactivate() {
 }
 exports.deactivate = deactivate;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\merge-conflict\out/extension.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/abd89d197fd1913e759bdec423747c2f1d793e94/extensions\merge-conflict\out/extension.js.map

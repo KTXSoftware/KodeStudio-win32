@@ -46,7 +46,7 @@ class DocumentMergeConflictTracker {
         // Attempt from cache
         let key = this.getCacheKey(document);
         if (!key) {
-            // Document doesnt have a uri, can't cache it, so return
+            // Document doesn't have a uri, can't cache it, so return
             return Promise.resolve(this.getConflictsOrEmpty(document, [origin]));
         }
         let cacheItem = this.cache.get(key);
@@ -91,7 +91,7 @@ class DocumentMergeConflictTracker {
     dispose() {
         this.cache.clear();
     }
-    getConflictsOrEmpty(document, origins) {
+    getConflictsOrEmpty(document, _origins) {
         const containsConflict = mergeConflictParser_1.MergeConflictParser.containsConflict(document);
         if (!containsConflict) {
             return [];
@@ -107,4 +107,4 @@ class DocumentMergeConflictTracker {
     }
 }
 exports.default = DocumentMergeConflictTracker;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/3176c3de349aff5ca5407ebef0ae77aed5806604/extensions\merge-conflict\out/documentTracker.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/abd89d197fd1913e759bdec423747c2f1d793e94/extensions\merge-conflict\out/documentTracker.js.map
