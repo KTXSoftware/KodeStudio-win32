@@ -4541,9 +4541,7 @@ define("vs/workbench/workbench.main.nls", {
 		"Overwriting extension {0} with {1}.",
 		"Loading development extension at {0}",
 		"Overwriting extension {0} with {1}.",
-		"Extension `{0}` cannot use PROPOSED API as it cannot be found",
-		"Extensions have been modified on disk. Please reload the window.",
-		"Reload Window"
+		"Extension `{0}` cannot use PROPOSED API as it cannot be found"
 	],
 	"vs/workbench/services/extensions/electron-browser/inactiveExtensionUrlHandler": [
 		"Allow an extension to open this URL?"
