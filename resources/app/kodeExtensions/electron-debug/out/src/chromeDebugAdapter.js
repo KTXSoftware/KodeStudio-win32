@@ -66,7 +66,7 @@ class ChromeDebugAdapter extends vscode_chrome_debug_core_1.ChromeDebugAdapter {
             }
             // Start with remote debugging enabled
             const port = args.port || Math.floor((Math.random() * 10000) + 10000);
-            const chromeArgs = [];
+            const chromeArgs = ['--chromedebug'];
             const chromeEnv = args.env || null;
             const chromeWorkingDir = args.cwd || null;
             if (args.appDir) {
