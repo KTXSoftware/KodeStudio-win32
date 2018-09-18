@@ -1,9 +1,0 @@
-/bin/*
-/node_modules
-/*.vsix
-*.n
-vscode.ico
-.haxelib/
-/haxelib.zip
-build/run.js
-*.log
