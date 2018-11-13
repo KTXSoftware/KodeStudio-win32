@@ -16,4 +16,4 @@ function activate(_context) {
     });
 }
 exports.activate = activate;
-//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/eae818731e27caee1b98dfe9cf1c3108549efa1c/extensions\python\out/pythonMain.js.map
+//# sourceMappingURL=https://ticino.blob.core.windows.net/sourcemaps/7eefaf49560f5ee60219f93487cf67802625ac03/extensions\python\out/pythonMain.js.map
